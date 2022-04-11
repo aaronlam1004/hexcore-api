@@ -19,5 +19,5 @@ app.get('/demo', function(req, res) {
 
 app.use('/', sets);
 
-console.log("Running API server at: localhost:3000");
-app.listen(3000);
+console.log("Starting up API server!");
+app.listen(process.env.PORT || 3000);
