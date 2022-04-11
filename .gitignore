@@ -1,0 +1,13 @@
+sets/set6/champions/download-champions.sh
+sets/set6/traits/download-traits.sh
+sets/set6/traits/standarize-trait-color.py
+sets/set6/items/download-items.sh
+sets/set6/items/standarize-imgs.py
+sets/set6.5/champions/download-champions.sh
+sets/set6.5/traits/download-traits.sh
+sets/set6.5/traits/standarize-trait-color.py
+sets/set6.5/items/download-items.sh
+sets/set6.5/items/standarize-imgs.py
+api/node_modules
+api-testing.py
+output.txt

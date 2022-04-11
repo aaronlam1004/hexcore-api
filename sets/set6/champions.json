@@ -1,0 +1,546 @@
+[
+  {
+    "name": "Akali",
+    "id": "TFT6_Akali",
+    "cost": 5,
+    "traits": [
+      "Set6_Assassin",
+      "Set6_Syndicate"
+    ]
+  },  
+  {
+    "name": "Blitzcrank",
+    "id": "TFT6_Blitzcrank",
+    "cost": 2,
+    "traits": [
+      "Set6_Bodyguard",
+      "Set6_Protector",
+      "Set6_Scrap"
+    ]
+  }, 
+  {
+    "name": "Braum",
+    "id": "TFT6_Braum",
+    "cost": 4,
+    "traits": [
+      "Set6_Bodyguard",
+      "Set6_Syndicate"
+    ]
+  },
+  {
+    "name": "Caitlyn",
+    "id": "TFT6_Caitlyn",
+    "cost": 1,
+    "traits": [
+      "Set6_Sniper",
+      "Set6_Enforcer"
+    ]
+  },
+  {
+    "name": "Camille",
+    "id": "TFT6_Camille",
+    "cost": 1,
+    "traits": [
+      "Set6_Challenger",
+      "Set6_Clockwork"
+    ]
+  },
+  {
+    "name": "Cho'Gath",
+    "id": "TFT6_ChoGath",
+    "cost": 3,
+    "traits": [
+      "Set6_Colossus",
+      "Set6_Bruiser",
+      "Set6_Mutant"
+    ]
+  },
+  {
+    "name": "Darius",
+    "id": "TFT6_Darius",
+    "cost": 1,
+    "traits": [
+      "Set6_Bodyguard",
+      "Set6_Syndicate"
+    ]
+  },
+  {
+    "name": "Dr Mundo",
+    "id": "TFT6_Mundo",
+    "cost": 4,
+    "traits": [
+      "Set6_Bruiser",
+      "Set6_Mutant",
+      "Set6_Chemtech"
+    ]
+  },
+  {
+    "name": "Ekko",
+    "id": "TFT6_Ekko",
+    "cost": 3,
+    "traits": [
+      "Set6_Assassin",
+      "Set6_Scrap"
+    ]
+  },
+  {
+    "name": "Ezreal",
+    "id": "TFT6_Ezreal",
+    "cost": 1,
+    "traits": [
+      "Set6_Scrap",
+      "Set6_Innovator"
+    ]
+  },
+  {
+    "name": "Fiora",
+    "id": "TFT6_Fiora",
+    "cost": 4,
+    "traits": [
+      "Set6_Challenger",
+      "Set6_Enforcer"
+    ]
+  },
+  {
+    "name": "Galio",
+    "id": "TFT6_Galio",
+    "cost": 5,
+    "traits": [
+      "Set6_Colossus",
+      "Set6_Socialite",
+      "Set6_Bodyguard"
+    ]
+  },
+  {
+    "name": "Gangplank",
+    "id": "TFT6_Gangplank",
+    "cost": 3,
+    "traits": [
+      "Set6_Twinshot",
+      "Set6_Mercenary"
+    ]
+  },
+  {
+    "name": "Garen",
+    "id": "TFT6_Garen",
+    "cost": 1,
+    "traits": [
+      "Set6_Protector",
+      "Set6_Academy"
+    ]
+  },
+  {
+    "name": "Graves",
+    "id": "TFT6_Graves",
+    "cost": 1,
+    "traits": [
+      "Set6_Twinshot",
+      "Set6_Academy"
+    ]
+  },
+  {
+    "name": "Heimerdinger",
+    "id": "TFT6_Heimerdinger",
+    "cost": 3,
+    "traits": [
+      "Set6_Scholar",
+      "Set6_Yordle",
+      "Set6_Innovator"
+    ]
+  },
+  {
+    "name": "Illaoi",
+    "id": "TFT6_Illaoi",
+    "cost": 1,
+    "traits": [
+      "Set6_Bruiser",
+      "Set6_Mercenary"
+    ]
+  },
+  {
+    "name": "Janna",
+    "id": "TFT6_Janna",
+    "cost": 4,
+    "traits": [
+      "Set6_Scholar",
+      "Set6_Enchanter",
+      "Set6_Scrap"
+    ]
+  },
+  {
+    "name": "Jayce",
+    "id": "TFT6_Jayce",
+    "cost": 5,
+    "traits": [
+      "Set6_Transformer",
+      "Set6_Innovator",
+      "Set6_Enforcer"
+    ]
+  },
+  {
+    "name": "Jhin",
+    "id": "TFT6_Jhin",
+    "cost": 4,
+    "traits": [
+      "Set6_Sniper",
+      "Set6_Clockwork"
+    ]
+  },
+  {
+    "name": "Jinx",
+    "id": "TFT6_Jinx",
+    "cost": 5,
+    "traits": [
+      "Set6_Twinshot",
+      "Set6_Scrap",
+      "Set6_Sister"
+    ]
+  },
+  {
+    "name": "Kai'Sa",
+    "id": "TFT6_KaiSa",
+    "cost": 5,
+    "traits": [
+      "Set6_Challenger",
+      "Set6_Mutant"
+    ]
+  },
+  {
+    "name": "Kassadin",
+    "id": "TFT6_Kassadin",
+    "cost": 1,
+    "traits": [
+      "Set6_Protector",
+      "Set6_Mutant"
+    ]
+  },
+  {
+    "name": "Katarina",
+    "id": "TFT6_Katarina",
+    "cost": 2,
+    "traits": [
+      "Set6_Assassin",
+      "Set6_Academy"
+    ]
+  },
+  {
+    "name": "Kog'Maw",
+    "id": "TFT6_KogMaw",
+    "cost": 2,
+    "traits": [
+      "Set6_Twinshot",
+      "Set6_Sniper",
+      "Set6_Mutant"
+    ]
+  },
+  {
+    "name": "Leona",
+    "id": "TFT6_Leona",
+    "cost": 3,
+    "traits": [
+      "Set6_Bodyguard",
+      "Set6_Academy"
+    ]
+  },
+  {
+    "name": "Lissandra",
+    "id": "TFT6_Lissandra",
+    "cost": 3,
+    "traits": [
+      "Set6_Scholar",
+      "Set6_Chemtech"
+    ]
+  },
+  {
+    "name": "Lulu",
+    "id": "TFT6_Lulu",
+    "cost": 2,
+    "traits": [
+      "Set6_Yordle",
+      "Set6_Enchanter"
+    ]
+  },
+  {
+    "name": "Lux",
+    "id": "TFT6_Lux",
+    "cost": 4,
+    "traits": [
+      "Set6_Arcanist",
+      "Set6_Academy"
+    ]
+  },
+  {
+    "name": "Malzahar",
+    "id": "TFT6_Malzahar",
+    "cost": 3,
+    "traits": [
+      "Set6_Arcanist",
+      "Set6_Mutant"
+    ]
+  },
+  {
+    "name": "Miss Fortune",
+    "id": "TFT6_MissFortune",
+    "cost": 3,
+    "traits": [
+      "Set6_Sniper",
+      "Set6_Mercenary"
+    ]
+  },
+  {
+    "name": "Orianna",
+    "id": "TFT6_Orianna",
+    "cost": 4,
+    "traits": [
+      "Set6_Enchanter",
+      "Set6_Clockwork"
+    ]
+  },
+  {
+    "name": "Poppy",
+    "id": "TFT6_Poppy",
+    "cost": 1,
+    "traits": [
+      "Set6_Bodyguard",
+      "Set6_Yordle"
+    ]
+  },
+  {
+    "name": "Quinn",
+    "id": "TFT6_Quinn",
+    "cost": 2,
+    "traits": [
+      "Set6_Challenger",
+      "Set6_Mercenary"
+    ]
+  },
+  {
+    "name": "Samira",
+    "id": "TFT6_Samira",
+    "cost": 3,
+    "traits": [
+      "Set6_Challenger",
+      "Set6_Imperial"
+    ]
+  },
+  {
+    "name": "Seraphine",
+    "id": "TFT6_Seraphine",
+    "cost": 4,
+    "traits": [
+      "Set6_Socialite",
+      "Set6_Innovator"
+    ]
+  },
+  {
+    "name": "Shaco",
+    "id": "TFT6_Shaco",
+    "cost": 3,
+    "traits": [
+      "Set6_Assassin",
+      "Set6_Syndicate"
+    ]
+  },
+  {
+    "name": "Singed",
+    "id": "TFT6_Singed",
+    "cost": 1,
+    "traits": [
+      "Set6_Innovator",
+      "Set6_Chemtech"
+    ]
+  },
+  {
+    "name": "Sion",
+    "id": "TFT6_Sion",
+    "cost": 4,
+    "traits": [
+      "Set6_Colossus",
+      "Set6_Protector",
+      "Set6_Imperial"
+    ]
+  },
+  {
+    "name": "Swain",
+    "id": "TFT6_Swain",
+    "cost": 2,
+    "traits": [
+      "Set6_Arcanist",
+      "Set6_Imperial"
+    ]
+  },
+  {
+    "name": "Tahm Kench",
+    "id": "TFT6_TahmKench",
+    "cost": 5,
+    "traits": [
+      "Set6_Glutton",
+      "Set6_Bruiser",
+      "Set6_Mercenary"
+    ]
+  },
+  {
+    "name": "Talon",
+    "id": "TFT6_Talon",
+    "cost": 2,
+    "traits": [
+      "Set6_Assassin",
+      "Set6_Imperial"
+    ]
+  },
+  {
+    "name": "Taric",
+    "id": "TFT6_Taric",
+    "cost": 3,
+    "traits": [
+      "Set6_Enchanter",
+      "Set6_Socialite"
+    ]
+  },
+  {
+    "name": "Tristana",
+    "id": "TFT6_Tristana",
+    "cost": 2,
+    "traits": [
+      "Set6_Sniper",
+      "Set6_Yordle"
+    ]
+  },
+  {
+    "name": "Trundle",
+    "id": "TFT6_Trundle",
+    "cost": 2,
+    "traits": [
+      "Set6_Bruiser",
+      "Set6_Scrap"
+    ]
+  },
+  {
+    "name": "Twisted Fate",
+    "id": "TFT6_TwistedFate",
+    "cost": 1,
+    "traits": [
+      "Set6_Arcanist",
+      "Set6_Syndicate"
+    ]
+  },
+  {
+    "name": "Twitch",
+    "id": "TFT6_Twitch",
+    "cost": 1,
+    "traits": [
+      "Set6_Assassin",
+      "Set6_Chemtech"
+    ]
+  },
+  {
+    "name": "Urgot",
+    "id": "TFT6_Urgot",
+    "cost": 4,
+    "traits": [
+      "Set6_Twinshot",
+      "Set6_Chemtech"
+    ]
+  },
+  {
+    "name": "Veigar",
+    "id": "TFT6_Veigar",
+    "cost": 5,
+    "traits": [
+      "Set6_Yordle-Lord"
+    ]
+  },
+  {
+    "name": "Vex",
+    "id": "TFT6_Vex",
+    "cost": 3,
+    "traits": [
+      "Set6_Yordle",
+      "Set6_Arcanist"
+    ]
+  },
+  {
+    "name": "Vi",
+    "id": "TFT6_Vi",
+    "cost": 2,
+    "traits": [
+      "Set6_Bruiser",
+      "Set6_Sister",
+      "Set6_Enforcer"
+    ]
+  },
+  {
+    "name": "Viktor",
+    "id": "TFT6_Viktor",
+    "cost": 5,
+    "traits": [
+      "Set6_Arcanist",
+      "Set6_Chemtech"
+    ]
+  },
+  {
+    "name": "Warwick",
+    "id": "TFT6_Warwick",
+    "cost": 2,
+    "traits": [
+      "Set6_Challenger",
+      "Set6_Chemtech"
+    ]
+  },
+  {
+    "name": "Yone",
+    "id": "TFT6_Yone",
+    "cost": 4,
+    "traits": [
+      "Set6_Challenger",
+      "Set6_Academy"
+    ]
+  },
+  {
+    "name": "Yuumi",
+    "id": "TFT6_Yuumi",
+    "cost": 5,
+    "traits": [
+      "Set6_Scholar",
+      "Set6_Cuddly",
+      "Set6_Academy"
+    ]
+  },
+  {
+    "name": "Zac",
+    "id": "TFT6_Zac",
+    "cost": 3,
+    "traits": [
+      "Set6_Bruiser",
+      "Set6_Chemtech"
+    ]
+  },
+  {
+    "name": "Ziggs",
+    "id": "TFT6_Ziggs",
+    "cost": 1,
+    "traits": [
+      "Set6_Arcanist",
+      "Set6_Scrap",
+      "Set6_Yordle"
+    ]
+  },
+  {
+    "name": "Zilean",
+    "id": "TFT6_Zilean",
+    "cost": 2,
+    "traits": [
+      "Set6_Innovator",
+      "Set6_Clockwork"
+    ]
+  },
+  {
+    "name": "Zyra",
+    "id": "TFT6_Zyra",
+    "cost": 2,
+    "traits": [
+      "Set6_Scholar",
+      "Set6_Syndicate"
+    ]
+  }
+]

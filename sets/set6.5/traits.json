@@ -1,0 +1,588 @@
+[
+  {
+    "key": "Set6-5_Arcanist",
+    "name": "Arcanist",
+    "description": "Allies have increased Spell Power.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Assassin",
+    "name": "Assassin",
+    "description": "Innate. Assassins jump to the enemy backline at the start of combat. Assassins' Abilities can critically strike, and they gain bonus Critical Strike Chance and Critical Strike Damage.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Bodyguard",
+    "name": "Bodyguard",
+    "description": "Bodyguards have increased Armor. Shortly after combat begins, Bodyguards taunt adjacent enemies.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Bruiser",
+    "name": "Bruiser",
+    "description": "All allies have increased Health. Bruisers gain double this bonus.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Challenger",
+    "name": "Challenger",
+    "description": "Challengers have increased Attack Speed. Upon landing a takedown on their target, challengers will dash to a new target, doubling this bonus for 2.5 seconds.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Chemtech",
+    "name": "Chemtech",
+    "description": "After dropping below 60% Health, Chemtech champions gain 25% Damage Reduction, 50% Attack Speed, and regenerate 5% of their maximum Health each second. Breakpoints add to the duration of this effect.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "silver",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "gold",
+        "min": 7,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Colossus",
+    "name": "Colossus",
+    "description": "Innate: Colossus are bigger, more powerful, and take up two slots in your army. (1) Colossus are immune to Crowd Control effects. (2) Colossus take reduced damage.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 2
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Clockwork",
+    "name": "Clockwork",
+    "description": "All allies have increased Attack Speed, and additional Attack Speed for each Hextech Augment you own.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Debonair",
+    "name": "Debonair",
+    "description": "Debonair champions gain bonus Health and Ability Power. If there is a Debonair VIP in play, they activate their unique bonus. (Sell the old VIP for a chance to see a new one in your Shop.)",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "chromatic",
+        "min": 7
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Enchanter",
+    "name": "Enchanter",
+    "description": "Enchanters' healing and shielding are stronger, and all Allies gain increased Magic Resistance.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 4
+      },
+      {
+        "style": "chromatic",
+        "min": 5
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Enforcer",
+    "name": "Enforcer",
+    "description": "Enforcers detain enemies at the start of combat for 4 seconds, temporarily removing them from combat.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "silver",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Glutton",
+    "name": "Glutton",
+    "description": "Once per planning phase, you can feed a unit to Tahm Kench. This unit is consumed, granting permanent bonus stats. The more valuable the unit, the bigger the bonus. To feed Tahm Kench, hover a unit over him until his mouth opens, then release. Bonuses: Bodyguard (Armor), Enchanter (Magic Resist), Bruisers/Protector (Health), other (Ability Power)",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Hextech",
+    "name": "Hextech",
+    "description": "At the start of combat and every few seconds, the Hexcore sends out a pulse that grants a shield for Hextech champions that, while active, adds bonus magic damage on attacks.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Innovator",
+    "name": "Innovator",
+    "description": "Innovators build a mechanical companion to join their battle.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "chromatic",
+        "min": 7
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Mastermind",
+    "name": "Mastermind",
+    "description": "At the start of combat, the Mastermind grants the 2 allies directly in front of him Mana.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Mercenary",
+    "name": "Mercenary",
+    "description": "Gain a treasure chest that opens when you win combat against a player. At the start of each planning phase, roll the dice to add more loot to the chest! The longer you've gone without opening the chest, the luckier the dice. (3) Roll two dice. (5) Roll a third dice that grants you a bonus orb right away.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "chromatic",
+        "min": 7
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Mutant",
+    "name": "Mutant",
+    "description": "Mutants gain unique bonuses. These are different each game.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "chromatic",
+        "min": 7
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Rivals",
+    "name": "Rivals",
+    "description": "This trait is active when you have eaxtly 1 unique Rival unit, as Rivals refuse to work together. Vi's Mana cost is reduced. Jinx gains Attack Speed for 3 seconds after scoring a takedown.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Scholar",
+    "name": "Scholar",
+    "description": "All allies restore some mana every 2 seconds.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Scrap",
+    "name": "Scrap",
+    "description": "At the start of combat, a number of incomplete components on Scrap champions turn into an ephemeral full item for that combat. Additionally, at the start of combat, Scrap champions also gain a Health shield for each item equipped in your army.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Sniper",
+    "name": "Sniper",
+    "description": "Snipers deal bonus damage for each hex between themselves and their target.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Socialite",
+    "name": "Socialite",
+    "description": "Socialite reveal a spotlight on the battlefield. The unit standing in the spotlight at the start of combat gains unique bonuses. (1) Bonus Damage (2) Bonus Mana Regen (3) Bonus Omnivamp",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "style": "silver",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "gold",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "chromatic",
+        "min": 5
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Striker",
+    "name": "Striker",
+    "description": "Strikers gain bonus Attack Damage.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Syndicate",
+    "name": "Syndicate",
+    "description": "Chosen allies are cloaked in shadows, gaining Omnivamp, Armor, and Magic Resistance.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "chromatic",
+        "min": 7
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Transformer",
+    "name": "Transformer",
+    "description": "Transformers have two forms that they can swap in between during planning phase depending on whether they are placed in the frontline or backline.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Twinshot",
+    "name": "Twinshot",
+    "description": "Twinshots gain bonus Attack Damage. When a Twinshot attacks, they have a chance to attack twice instead.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Yordle",
+    "name": "Yordle",
+    "description": "After combat with a player, a random free Yordle appears on your bench!",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6-5_Yordle-Lord",
+    "name": "Yordle-Lord",
+    "description": "Benefits from the Yordle trait.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "chromatic",
+        "min": 1
+      }
+    ]
+  }
+]

@@ -13,13 +13,13 @@ function BuildErrorJson(message) {
 SETS.forEach((set) => {
   let folder = set.replace('-', '.');
 
-  let championData = fs.readFileSync(`../set${folder}/champions.json`);
+  let championData = fs.readFileSync(`./sets/set${folder}/champions.json`);
   let champions = JSON.parse(championData);
 
-  let itemData = fs.readFileSync(`../set${folder}/items.json`);
+  let itemData = fs.readFileSync(`./sets/set${folder}/items.json`);
   let items = JSON.parse(itemData);
 
-  let traitData = fs.readFileSync(`../set${folder}/traits.json`);
+  let traitData = fs.readFileSync(`./sets/set${folder}/traits.json`);
   let traits = JSON.parse(traitData);
 
   router.get(`/set${set}/champions`, function(req, res) {
@@ -147,7 +147,7 @@ SETS.forEach((set) => {
       for (let champion of champions) {
         let currChampion = champion["name"].toLowerCase();
         if (currChampion == req.query.champion.toLowerCase()) {
-          return res.sendFile(`set${folder}/champions/${champion["id"]}.png`, {"root": '../'});
+          return res.sendFile(`set${folder}/champions/${champion["id"]}.png`, {"root": './sets/'});
         }
       }
     }
@@ -156,10 +156,10 @@ SETS.forEach((set) => {
       for (let item of items) {
         let currItem = item;
         if (currItem["id"] === Number(req.query.item)) {
-          return res.sendFile(`set${folder}/items/${item["id"]}.png`, {"root": '../'});
+          return res.sendFile(`set${folder}/items/${item["id"]}.png`, {"root": './sets/'});
         }
         else if (currItem["name"].toLowerCase() === req.query.item.toLowerCase()) {
-          return res.sendFile(`set${folder}/items/${item["id"]}.png`, {"root": '../'});
+          return res.sendFile(`set${folder}/items/${item["id"]}.png`, {"root": './sets/'});
         }
       }
     }
@@ -168,7 +168,7 @@ SETS.forEach((set) => {
       for (let trait of traits) {
         let currTrait = trait;
         if (currTrait["name"].toLowerCase() === req.query.trait.toLowerCase()) {
-          return res.sendFile(`set${folder}/traits/${trait["name"]}.svg`, {"root": '../'});
+          return res.sendFile(`set${folder}/traits/${trait["name"]}.svg`, {"root": './sets/'});
         }
       }
     }

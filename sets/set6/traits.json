@@ -1,0 +1,578 @@
+[
+  {
+    "key": "Set6_Academy",
+    "name": "Academy",
+    "description": "Academics have bonus Attack Damage and Ability Power, and can learn from their allies, increasing this bonus whenever an ally casts an ability",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set6_Arcanist",
+    "name": "Arcanist",
+    "description": "Allies have increased Spell Power.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set6_Assassin",
+    "name": "Assassin",
+    "description": "Innate. Assassins jump to the enemy backline at the start of combat. Assassins' Abilities can critically strike, and they gain bonus Critical Strike Chance and Critical Strike Damage.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6_Bodyguard",
+    "name": "Bodyguard",
+    "description": "Bodyguards have increased Armor. Shortly after combat begins, Bodyguards taunt adjacent enemies.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set6_Bruiser",
+    "name": "Bruiser",
+    "description": "All allies have increased Health. Bruisers gain double this bonus.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set6_Challenger",
+    "name": "Challenger",
+    "description": "Challengers have increased Attack Speed. Upon landing a takedown on their target, challengers will dash to a new target, doubling this bonus for 2.5 seconds.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set6_Chemtech",
+    "name": "Chemtech",
+    "description": "After dropping below 60% Health, Chemtech champions gain 25% Damage Reduction, 50% Attack Speed, and regenerate 5% of their maximum Health each second. Breakpoints add to the duration of this effect.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "silver",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "gold",
+        "min": 7,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
+      }
+    ]
+  },
+  {
+    "key": "Set6_Colossus",
+    "name": "Colossus",
+    "description": "Innate: Colossus are bigger, more powerful, and take up two slots in your army. (1) Colossus are immune to Crowd Control effects. (2) Colossus take reduced damage.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 2
+      }
+    ]
+  },
+  {
+    "key": "Set6_Clockwork",
+    "name": "Clockwork",
+    "description": "All allies have increased Attack Speed, and additional Attack Speed for each Hextech Augment you own.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6_Cuddly",
+    "name": "Cuddly",
+    "description": "Yuumi attaches herself to her nearest ally at start of combat, or to the lowest Health ally after being unattached for 3 seconds. Attaching grants the ally a shield equal to a portion of Yuumi's maximum health, and Yuumi detaches if the shield is broken. While attached Yuumi is untargetable and can't attack, but gains 5 mana per second, and 5 mana whenever the ally attacks.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set6_Enchanter",
+    "name": "Enchanter",
+    "description": "Enchanters' healing and shielding are stronger, and all Allies gain increased Magic Resistance.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 4
+      },
+      {
+        "style": "chromatic",
+        "min": 5
+      }
+    ]
+  },
+  {
+    "key": "Set6_Enforcer",
+    "name": "Enforcer",
+    "description": "Enforcers detain enemies at the start of combat for 4 seconds, temporarily removing them from combat.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "silver",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "Set6_Glutton",
+    "name": "Glutton",
+    "description": "Once per planning phase, you can feed a unit to Tahm Kench. This unit is consumed, granting permanent bonus stats. The more valuable the unit, the bigger the bonus. To feed Tahm Kench, hover a unit over him until his mouth opens, then release. Bonuses: Bodyguard (Armor), Enchanter (Magic Resist), Bruisers/Protector (Health), other (Ability Power)",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set6_Imperial",
+    "name": "Imperial",
+    "description": "At the start of combat, the Imperial who dealt the most damage last combat becomes the Tyrant. The Tyrant deals bonus damage. When the Tyrant dies, the Imperial who has dealt the most damage this combat becomes the new Tyrant.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5
+      }
+    ]
+  },
+  {
+    "key": "Set6_Innovator",
+    "name": "Innovator",
+    "description": "Innovators build a mechanical companion to join their battle.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "chromatic",
+        "min": 7
+      }
+    ]
+  },
+  {
+    "key": "Set6_Mercenary",
+    "name": "Mercenary",
+    "description": "Gain a treasure chest that opens when you win combat against a player. At the start of each planning phase, roll the dice to add more loot to the chest! The longer you've gone without opening the chest, the luckier the dice. (3) Roll two dice. (5) Roll a third dice that grants you a bonus orb right away.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "chromatic",
+        "min": 7
+      }
+    ]
+  },
+  {
+    "key": "Set6_Mutant",
+    "name": "Mutant",
+    "description": "Mutants gain unique bonuses. These are different each game.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5
+      }
+    ]
+  },
+  {
+    "key": "Set6_Protector",
+    "name": "Protector",
+    "description": "Protectors shield themselves for 4 seconds whenever they cast a spell. This shield doesn't stack.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 4
+      },
+      {
+        "style": "chromatic",
+        "min": 5
+      }
+    ]
+  },
+  {
+    "key": "Set6_Scholar",
+    "name": "Scholar",
+    "description": "All allies restore some mana every 2 seconds.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6_Scrap",
+    "name": "Scrap",
+    "description": "At the start of combat, a number of incomplete components on Scrap champions turn into an ephemeral full item for that combat. Additionally, at the start of combat, Scrap champions also gain a Health shield for each item equipped in your army.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6_Sister",
+    "name": "Sister",
+    "description": "Sisters are empowered by trying to one-up each other. Vi's ability range increases by two hexes. Jinx gains stacking Attack Speed for 3 seconds on takedown.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 2
+      }
+    ]
+  },
+  {
+    "key": "Set6_Sniper",
+    "name": "Sniper",
+    "description": "Snipers deal bonus damage for each hex between themselves and their target.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6_Socialite",
+    "name": "Socialite",
+    "description": "Socialite reveal a spotlight on the battlefield. The unit standing in the spotlight at the start of combat gains unique bonuses. (1) Bonus Damage (2) Bonus Mana Regen (3) Bonus Omnivamp",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "style": "silver",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "gold",
+        "min": 3
+      }
+    ]
+  },
+  {
+    "key": "Set6_Syndicate",
+    "name": "Syndicate",
+    "description": "Chosen allies are cloaked in shadows, gaining Omnivamp, Armor, and Magic Resistance.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "chromatic",
+        "min": 7
+      }
+    ]
+  },
+  {
+    "key": "Set6_Transformer",
+    "name": "Transformer",
+    "description": "Transformers have two forms that they can swap in between during planning phase depending on whether they are placed in the frontline or backline.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set6_Twinshot",
+    "name": "Twinshot",
+    "description": "Twinshots gain bonus Attack Damage. When a Twinshot attacks, they have a chance to attack twice instead.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6_Yordle",
+    "name": "Yordle",
+    "description": "After combat with a player, a random free Yordle appears on your bench!",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set6_Yordle-Lord",
+    "name": "Yordle-Lord",
+    "description": "Benefits from the Yordle trait.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "chromatic",
+        "min": 1
+      }
+    ]
+  }
+]
