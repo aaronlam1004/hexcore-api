@@ -1,0 +1,14 @@
+h1 {
+  color: red;
+}
+
+#api-output {
+  white-space: pre-line;
+  height: 400px;
+  overflow: scroll;
+  font-family: "Consolas", sans-serif;
+}
+
+#api-trait {
+  width: 15em;
+}

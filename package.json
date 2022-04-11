@@ -1,0 +1,25 @@
+{
+  "name": "tft-api",
+  "version": "1.0.0",
+  "description": "This is mainly created because Riot's current API does not support the new set.\r - This will probably exist until Riot decides to publish its own",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronlam1004/tft-set6-gadget-gizmos-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronlam1004/tft-set6-gadget-gizmos-api/issues"
+  },
+  "homepage": "https://github.com/aaronlam1004/tft-set6-gadget-gizmos-api#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.15"
+  }
+}
