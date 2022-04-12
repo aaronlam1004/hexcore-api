@@ -611,17 +611,1336 @@
 </tbody>
 </table>
 <h2 id="examples">Examples</h2>
+<p><strong>Base:</strong></p>
 <details class="success">
 <summary>/set6-5/items</summary>
+<div class="highlight"><pre><span></span><code>[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;B.F. Sword&quot;,
+    &quot;description&quot;: &quot;Gain Attack Damage.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Recurve Bow&quot;,
+    &quot;description&quot;: &quot;Gain Attack Speed.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Needlessly Large Rod&quot;,
+    &quot;description&quot;: &quot;Gain Ability Power.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Tear of the Goddess&quot;,
+    &quot;description&quot;: &quot;Gain Mana.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chain Vest&quot;,
+    &quot;description&quot;: &quot;Gain Armor.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Negatron Cloak&quot;,
+    &quot;description&quot;: &quot;Gain Magic Resist.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Giant&#39;s Belt&quot;,
+    &quot;description&quot;: &quot;Gain Health.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Spatula&quot;,
+    &quot;description&quot;: &quot;It must do something...&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Sparring Gloves&quot;,
+    &quot;description&quot;: &quot;Gain Critical Strike Chance and Dodge Chance.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 11,
+    &quot;name&quot;: &quot;Deathblade&quot;,
+    &quot;description&quot;: &quot;Contributing to a kill grants the holder additional Attack Damage for the rest of combat. This effect can stack any number of times.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 12,
+    &quot;name&quot;: &quot;Giant Slayer&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s Abilities and attacks do bonus damage. If the target has more health, the bonus damage increases.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 13,
+    &quot;name&quot;: &quot;Hextech Gunblade&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s magic and true damage from Abilities heal them for a percentage of the damage dealt. Excess healing fuels a shield that protects the holder.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 14,
+    &quot;name&quot;: &quot;Spear of Shojin&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s Basic Attacks restore additional Mana.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 15,
+    &quot;name&quot;: &quot;Edge of Night&quot;,
+    &quot;description&quot;: &quot;When the holder drops below 60% health, they briefly enter stealth, becoming untargetable and shedding negative effects. After coming out of stealth, the holder gains bonus attack speed.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 16,
+    &quot;name&quot;: &quot;Bloodthirster&quot;,
+    &quot;description&quot;: &quot;Physical damage heals the holder for a percentage of the damage dealt. Upon falling below a percentage Health, the holder gains a shield based on their max Health that lasts several seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 17,
+    &quot;name&quot;: &quot;Zeke&#39;s Herald&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder and all nearby allies in the same row gain Attack Speed for the rest of combat.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 18,
+    &quot;name&quot;: &quot;Striker Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Striker trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 19,
+    &quot;name&quot;: &quot;Infinity Edge&quot;,
+    &quot;description&quot;: &quot;Grants Critical Strike Chance (including components) and Critical Strike damage. Each point of Critical Strike Chance above 100% becomes bonus Critical Strike Damage.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 22,
+    &quot;name&quot;: &quot;Rapid Firecannon&quot;,
+    &quot;description&quot;: &quot;Increases the holder&#39;s Attack Range and grants bonus Attack Speed (including components). The holder&#39;s attacks can no longer miss.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 23,
+    &quot;name&quot;: &quot;Guinsoo&#39;s Rageblade&quot;,
+    &quot;description&quot;: &quot;Attacks grant bonus Attack Speed for the rest of combat. This bonus Attack Speed can stack any number of times.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 24,
+    &quot;name&quot;: &quot;Statikk Shiv&quot;,
+    &quot;description&quot;: &quot;Every third attack from the holder unleashes a chain lightning that bounces to nearby enemies, dealing magic damage and reducing their Magic Resist for several seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 25,
+    &quot;name&quot;: &quot;Titan&#39;s Resolve&quot;,
+    &quot;description&quot;: &quot;When the holder takes damage or inflicts a critical strike, they gain a stacking Attack Damage and Ability Power bonus.  This stacks up to a limit, at which point the holder gains Armor and Magic Resistance.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 26,
+    &quot;name&quot;: &quot;Runaan&#39;s Hurricane&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s attacks fire a bolt at another nearby enemy, dealing a percentage of the holder&#39;s Attack Damage and applying on-hit effects. These bolts can critically strike.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 27,
+    &quot;name&quot;: &quot;Zz&#39;Rot Portal&quot;,
+    &quot;description&quot;: &quot;At the start of combat, the holder taunts nearby enemies. When the holder dies, a Voidspawn arises taunting nearby enemies. Voidspawns that arise from summoned units are only partially effective.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 28,
+    &quot;name&quot;: &quot;Challenger Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Challenger trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 29,
+    &quot;name&quot;: &quot;Last Whisper&quot;,
+    &quot;description&quot;: &quot;When the holder inflicts a critical hit, the target&#39;s Armor is reduced for several seconds. This effect does not stack.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 33,
+    &quot;name&quot;: &quot;Rabadon&#39;s Deathcap&quot;,
+    &quot;description&quot;: &quot;Grants bonus Ability Power (including components).&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 34,
+    &quot;name&quot;: &quot;Archangel&#39;s Staff&quot;,
+    &quot;description&quot;: &quot;Each time the holder casts their Ability, they gain Ability Power equal to a percentage of their maximum Mana (this bonus applies to that Ability cast).&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 35,
+    &quot;name&quot;: &quot;Locket of the Iron Solari&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder and nearby allies in the same row gain a shield that blocks damage for several seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 36,
+    &quot;name&quot;: &quot;Ionic Spark&quot;,
+    &quot;description&quot;: &quot;Nearby enemies have their Magic Resist reduced (does not stack). When they cast a spell, they are zapped taking magic damage equal to a percentage of their max Mana.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 37,
+    &quot;name&quot;: &quot;Morellonomicon&quot;,
+    &quot;description&quot;: &quot;When the holder deals magic or true damage with their Ability, they burn the target, dealing a percentage of the target&#39;s maximum Health as true damage over several seconds, and reducing healing for the duration of the burn.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 38,
+    &quot;name&quot;: &quot;Arcanist Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Arcanist trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 39,
+    &quot;name&quot;: &quot;Jeweled Gauntlet&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s magic and true damage from their Ability can critically strike. The holder gains bonus Critical Strike Damage.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 44,
+    &quot;name&quot;: &quot;Blue Buff&quot;,
+    &quot;description&quot;: &quot;After casting their Ability, the holder gains Mana.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 45,
+    &quot;name&quot;: &quot;Frozen Heart&quot;,
+    &quot;description&quot;: &quot;Reduces the Attack Speed of nearby enemies.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 46,
+    &quot;name&quot;: &quot;Chalice of Power&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder and all nearby allies in the same row gain Ability Power for the rest of combat.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 47,
+    &quot;name&quot;: &quot;Redemption&quot;,
+    &quot;description&quot;: &quot;Periodically, the holder radiates an aura to nearby allies, healing them a percentage of their missing Health. Affected allies take reduced damage from multi-target abilities and attacks for several seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 48,
+    &quot;name&quot;: &quot;Hextech Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Hextech trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 49,
+    &quot;name&quot;: &quot;Hand Of Justice&quot;,
+    &quot;description&quot;: &quot;At the beginning of each planning phase, the holder&#39;s basic attacks and spells deal additional damage and heal for a percentage of damage dealt. At the beginning of each planning phase, one of these buffs is increased.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 55,
+    &quot;name&quot;: &quot;Bramble Vest&quot;,
+    &quot;description&quot;: &quot;Negates bonus damage from incoming critical hits. On being hit by a Basic Attack, deal magic damage to all nearby enemies every couple seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 56,
+    &quot;name&quot;: &quot;Gargoyle Stoneplate&quot;,
+    &quot;description&quot;: &quot;The holder gains Armor and Magic Resist for each enemy targeting them.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 57,
+    &quot;name&quot;: &quot;Sunfire Cape&quot;,
+    &quot;description&quot;: &quot;Periodically, a random nearby enemy is burned a percentage of their maximum Health over several seconds. Any healing they receive is reduced.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 58,
+    &quot;name&quot;: &quot;Debonair Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Debonair trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 59,
+    &quot;name&quot;: &quot;Shroud of Stillness&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder shoots a beam straight ahead that delays affected enemies&#39; first spellcast, increasing their max Mana until they cast.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 66,
+    &quot;name&quot;: &quot;Dragon&#39;s Claw&quot;,
+    &quot;description&quot;: &quot;Grants bonus Magic Resist (including components). On being hit by magic or true damage from an Ability, launch a fireball at the Ability&#39;s caster that deals magic damage equal to a percentage of their max Health.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 67,
+    &quot;name&quot;: &quot;Zephyr&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder summons a whirlwind on the opposite side of the arena that removes the closest enemy from combat for several seconds. Ignores CC immunity.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 68,
+    &quot;name&quot;: &quot;Mutant Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Mutant trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 69,
+    &quot;name&quot;: &quot;Quicksilver&quot;,
+    &quot;description&quot;: &quot;The holder gains immunity to crowd control in combat for several seconds.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 77,
+    &quot;name&quot;: &quot;Warmog&#39;s Armor&quot;,
+    &quot;description&quot;: &quot;Grants bonus Health (including components).&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 78,
+    &quot;name&quot;: &quot;Chemtech Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Chemtech trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 79,
+    &quot;name&quot;: &quot;Banshee&#39;s Claw&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder and all nearby allies in the same row gain a shield that blocks the first enemy Ability.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 88,
+    &quot;name&quot;: &quot;Tactician&#39;s Crown&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s maximum team size is incrased.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 89,
+    &quot;name&quot;: &quot;Assassin Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Assassin trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 99,
+    &quot;name&quot;: &quot;Thief&#39;s Gloves&quot;,
+    &quot;description&quot;: &quot;At the beginning of each planning phase, the holder equips 2 temporary items. Temporary items increase in power based on your player level. [Consumes Three Item Slots]&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 108,
+    &quot;name&quot;: &quot;Bodyguard Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Bodyguard trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 118,
+    &quot;name&quot;: &quot;Bruiser Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Bruiser trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 128,
+    &quot;name&quot;: &quot;Clockwork Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Clockwork trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 138,
+    &quot;name&quot;: &quot; Enforcer Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Enforcer trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 148,
+    &quot;name&quot;: &quot;Innovator Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Innovator trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 158,
+    &quot;name&quot;: &quot;Mercenary Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Mercenary trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 168,
+    &quot;name&quot;: &quot;Syndicate Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Syndicate trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 178,
+    &quot;name&quot;: &quot;Scholar Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Scholar trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 188,
+    &quot;name&quot;: &quot;Scrap Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Scrap trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 198,
+    &quot;name&quot;: &quot;Sniper Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Sniper trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 208,
+    &quot;name&quot;: &quot;Socialite Emblem&quot;,
+    &quot;description&quot;: &quot;The holder gains the Socialite trait.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 301,
+    &quot;name&quot;: &quot;Anima Visage&quot;,
+    &quot;description&quot;: &quot;The wearer regenerates Health each second.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 302,
+    &quot;name&quot;: &quot;Death&#39;s Defiance&quot;,
+    &quot;description&quot;: &quot;Grants Omnivamp. The damage the wearer receives is instead dealt over 5 seconds as non-lethal damage.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 303,
+    &quot;name&quot;: &quot;Eternal Winter&quot;,
+    &quot;description&quot;: &quot;Enemies who damage the wearer have their Attack Speed slowed for 2 seconds. After being slowed this way 7 times, the attacker is Frozen for the duration instead. An enemy can only be Frozen once every 10 seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 304,
+    &quot;name&quot;: &quot;Gold Collector&quot;,
+    &quot;description&quot;: &quot;The wearer executes enemies below 10% health on-hit. Executions during PvP rounds have a 50% chance to generate 1 gold.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 305,
+    &quot;name&quot;: &quot;Infinity Force&quot;,
+    &quot;description&quot;: &quot;Gain Armor, Attack Damage, Attack Speed, Critical Strike Chance and Dodge, Health, Magic Resistance, and Ability Power.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 306,
+    &quot;name&quot;: &quot;Manazane&quot;,
+    &quot;description&quot;: &quot;After the wearer casts their spell for the first time each combat, they restore Mana over 4 seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 307,
+    &quot;name&quot;: &quot;Obsidian Cleaver&quot;,
+    &quot;description&quot;: &quot;The wearer&#39;s basic attacks and spell damage shred enemy Armor and Magic Resistance for 3 seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 308,
+    &quot;name&quot;: &quot;Randuin&#39;s Sanctum&quot;,
+    &quot;description&quot;: &quot;At the start of combat, all allies adjacent to the wearer gain bonus Armor and bonus Magic Resistance for the rest of combat.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 309,
+    &quot;name&quot;: &quot;Rocket-Propelled Fist&quot;,
+    &quot;description&quot;: &quot;At the start of combat, the wearer pulls the farthest enemy into melee range, stunning them for 1.5 seconds. Allies within range will prioritize attacking that enemy.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 310,
+    &quot;name&quot;: &quot;Zhonya&#39;s Paradox&quot;,
+    &quot;description&quot;: &quot;The first instance of damage that would reduce the wearer below 40% Health is prevented, causing them to become invulnerable for 2.5 seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 2011,
+    &quot;name&quot;: &quot;Luminous Deathblade&quot;,
+    &quot;description&quot;: &quot;Contributing to a kill grants the holder additional Attack Damage for the rest of combat. This effect can stack any number of times.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2066,
+    &quot;name&quot;: &quot;Dragon&#39;s Will&quot;,
+    &quot;description&quot;: &quot;Grants bonus Magic Resist (including components). On being hit by magic or true damage from an Ability, launch a fireball at the Ability&#39;s caster that deals magic damage equal to a percentage of their max Health.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Regenerate percentage max Health per second&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2045,
+    &quot;name&quot;: &quot;Frozen Heart of Gold&quot;,
+    &quot;description&quot;: &quot;Reduces the Attack Speed of nearby enemies.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Starting Mana&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2056,
+    &quot;name&quot;: &quot;Dvarapala Stoneplate&quot;,
+    &quot;description&quot;: &quot;The holder gains Armor and Magic Resist for each enemy targeting them.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Regenerate percentage max Health per second&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2012,
+    &quot;name&quot;: &quot;Demonslayer&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s Abilities and attacks do bonus damage. If the target has more health, the bonus damage increases.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2015,
+    &quot;name&quot;: &quot;Guardian Archangel&quot;,
+    &quot;description&quot;: &quot;Prevents the holder&#39;s first death, placing them in stasis instead. After a short delay, they return with restored Health and shed all negative effects.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Attack Speed&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2023,
+    &quot;name&quot;: &quot;Guinsoo&#39;s Reckoning&quot;,
+    &quot;description&quot;: &quot;Attacks grant bonus Attack Speed for the rest of combat. This bonus Attack Speed can stack any number of times.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2049,
+    &quot;name&quot;: &quot;Fist of Fairness&quot;,
+    &quot;description&quot;: &quot;At the beginning of each planning phase, the holder&#39;s basic attacks and spells deal additional damage and heals for a percentage of damage dealt.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2013,
+    &quot;name&quot;: &quot;Hextech Lifeblade&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s magic and true damage from Abilities heal them for a percentage of the damage dealt. Excess healing fuels a shield that protects the holder.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Ability Power&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2019,
+    &quot;name&quot;: &quot;Zenith Edge&quot;,
+    &quot;description&quot;: &quot;Grants Critical Strike Chance (including components) and Critical Strike damage. Each point of Critical Strike Chance above 100% becomes bonus Critical Strike Damage.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Critical Strike Damage&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2036,
+    &quot;name&quot;: &quot;Covalent Spark&quot;,
+    &quot;description&quot;: &quot;Nearby enemies have their Magic Resist reduced (does not stack). When they cast a spell, they are zapped taking magic damage equal to a percentage of their max Mana.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Regenerate percentage max Health per second&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2039,
+    &quot;name&quot;: &quot;Glamorous Gauntlet&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s magic and true damage from their Ability can critically strike. The holder gains bonus Critical Strike Damage.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2029,
+    &quot;name&quot;: &quot;Eternal Whisper&quot;,
+    &quot;description&quot;: &quot;When the holder inflicts a critical hit, the target&#39;s Armor is reduced for several seconds. This effect does not stack.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Critical Strike Chance&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2035,
+    &quot;name&quot;: &quot;Locket of the Targon Prime&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder and nearby allies in the same row gain a shield that blocks damage for several seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2037,
+    &quot;name&quot;: &quot;More More-ellonomicon&quot;,
+    &quot;description&quot;: &quot;When the holder deals magic or true damage with their Ability, they burn the target, dealing a percentage of the target&#39;s maximum Health as true damage over several seconds, and reducing healing for the duration of the burn.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Starting Mana&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2069,
+    &quot;name&quot;: &quot;Quickestsilver&quot;,
+    &quot;description&quot;: &quot;The holder gains immunity to crowd control in combat for several seconds.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Attack Speed&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2033,
+    &quot;name&quot;: &quot;Rabadon&#39;s Ascended Deathcap&quot;,
+    &quot;description&quot;: &quot;Grants bonus Ability Power (including components).&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2022,
+    &quot;name&quot;: &quot;Rapid Lightcannon&quot;,
+    &quot;description&quot;: &quot;Increases the holder&#39;s Attack Range and grants bonus Attack Speed (including components). The holder&#39;s attacks can no longer miss.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Attack Speed&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2047,
+    &quot;name&quot;: &quot;Radiant Redemption&quot;,
+    &quot;description&quot;: &quot;Periodically, the holder radiates an aura to nearby allies, healing them a percentage of their missing Health. Affected allies take reduced damage from multi-target abilities and attacks for several seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Health&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2026,
+    &quot;name&quot;: &quot;Runaan&#39;s Tempest&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s attacks fire a bolt at another nearby enemy, dealing a percentage of the holder&#39;s Attack Damage and applying on-hit effects. These bolts can critically strike.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Attack Speed&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2059,
+    &quot;name&quot;: &quot;Shroud of Reverence&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder shoots a beam straight ahead that delays affected enemies&#39; first spellcast, increasing their max Mana until they cast.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Starting Mana for all allies at the start of combat&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2014,
+    &quot;name&quot;: &quot;Spear of Hirana&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s Basic Attacks restore additional Mana.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2024,
+    &quot;name&quot;: &quot;Statikk Favor&quot;,
+    &quot;description&quot;: &quot;Every third attack from the holder unleashes a chain lightning that bounces to nearby enemies, dealing magic damage and reducing their Magic Resist for several seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2057,
+    &quot;name&quot;: &quot;Sunlight Cape&quot;,
+    &quot;description&quot;: &quot;Periodically, a random nearby enemy is burned a percentage of their maximum Health over several seconds. Any healing they receive is reduced.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Regenerate percentage max Health per second&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2099,
+    &quot;name&quot;: &quot;Rascal&#39;s Gloves&quot;,
+    &quot;description&quot;: &quot;At the beginning of each planning phase, the holder equips 2 temporary Radiant items. [Consumes Three Item Slots]&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2025,
+    &quot;name&quot;: &quot;Titan&#39;s Vow&quot;,
+    &quot;description&quot;: &quot;When the holder takes damage or inflicts a critical strike, they gain a stacking Attack Damage and Ability Power bonus.  This stacks up to a limit, at which point the holder gains Armor and Magic Resistance.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2079,
+    &quot;name&quot;: &quot;Banshee&#39;s Silence&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder and all nearby allies in the same row gain a shield that blocks the first enemy Ability.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Health for all allies at the start of combat&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2077,
+    &quot;name&quot;: &quot;Warmog&#39;s Pride&quot;,
+    &quot;description&quot;: &quot;Grants bonus Health (including components).&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Regenerate percentage max Health per second&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2017,
+    &quot;name&quot;: &quot;Zeke&#39;s Harmony&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder and all nearby allies in the same row gain Attack Speed and Lifesteal for the rest of combat.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2067,
+    &quot;name&quot;: &quot;Mistral&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder summons a whirlwind on the opposite side of the arena that removes the closest enemy from combat for several seconds. Ignores CC immunity.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Attack Speed for all allies at the start of combat&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2027,
+    &quot;name&quot;: &quot;Zz&#39;Rot Invitation&quot;,
+    &quot;description&quot;: &quot;At the start of combat, a Radiant Voidmother with bonus Health and Attack Damage aries and taunts nearby enemies. Radiant Voidmothers that arise from summoned units are only partially effective.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  }
+]
+</code></pre></div>
 </details>
+<p><strong>Name/ID:</strong></p>
 <details class="success">
 <summary>/set6-5/items?name=edge of night</summary>
+<div class="highlight"><pre><span></span><code>{
+  &quot;id&quot;: 15,
+  &quot;name&quot;: &quot;Edge of Night&quot;,
+  &quot;description&quot;: &quot;When the holder drops below 60% health, they briefly enter stealth, becoming untargetable and shedding negative effects. After coming out of stealth, the holder gains bonus attack speed.&quot;,
+  &quot;isUnique&quot;: true,
+  &quot;isElusive&quot;: false,
+  &quot;isArtifact&quot;: false
+}
+</code></pre></div>
 </details>
 <details class="success">
 <summary>/set6-5/items?id=306</summary>
+<div class="highlight"><pre><span></span><code>{
+  &quot;id&quot;: 306,
+  &quot;name&quot;: &quot;Manazane&quot;,
+  &quot;description&quot;: &quot;After the wearer casts their spell for the first time each combat, they restore Mana over 4 seconds.&quot;,
+  &quot;isUnique&quot;: false,
+  &quot;isElusive&quot;: false,
+  &quot;isArtifact&quot;: true
+}
+</code></pre></div>
 </details>
+<details class="failure">
+<summary>/set6-5/items?name=test</summary>
+<div class="highlight"><pre><span></span><code>{
+  &quot;status&quot;: 404,
+  &quot;type&quot;: &quot;item&quot;,
+  &quot;message&quot;: &quot;test is not the name of any item&quot;
+}
+</code></pre></div>
+</details>
+<details class="failure">
+<summary>/set6-5/items?id=-1</summary>
+<div class="highlight"><pre><span></span><code>{
+  &quot;status&quot;: 404,
+  &quot;type&quot;: &quot;item&quot;,
+  &quot;message&quot;: &quot;-1 is not the id of any item&quot;
+}
+</code></pre></div>
+</details>
+<p><strong>Attributes:</strong></p>
 <details class="success">
 <summary>/set6-5/items?attr=artifact radiant</summary>
+<div class="highlight"><pre><span></span><code>[
+  {
+    &quot;id&quot;: 301,
+    &quot;name&quot;: &quot;Anima Visage&quot;,
+    &quot;description&quot;: &quot;The wearer regenerates Health each second.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 302,
+    &quot;name&quot;: &quot;Death&#39;s Defiance&quot;,
+    &quot;description&quot;: &quot;Grants Omnivamp. The damage the wearer receives is instead dealt over 5 seconds as non-lethal damage.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 303,
+    &quot;name&quot;: &quot;Eternal Winter&quot;,
+    &quot;description&quot;: &quot;Enemies who damage the wearer have their Attack Speed slowed for 2 seconds. After being slowed this way 7 times, the attacker is Frozen for the duration instead. An enemy can only be Frozen once every 10 seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 304,
+    &quot;name&quot;: &quot;Gold Collector&quot;,
+    &quot;description&quot;: &quot;The wearer executes enemies below 10% health on-hit. Executions during PvP rounds have a 50% chance to generate 1 gold.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 305,
+    &quot;name&quot;: &quot;Infinity Force&quot;,
+    &quot;description&quot;: &quot;Gain Armor, Attack Damage, Attack Speed, Critical Strike Chance and Dodge, Health, Magic Resistance, and Ability Power.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 306,
+    &quot;name&quot;: &quot;Manazane&quot;,
+    &quot;description&quot;: &quot;After the wearer casts their spell for the first time each combat, they restore Mana over 4 seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 307,
+    &quot;name&quot;: &quot;Obsidian Cleaver&quot;,
+    &quot;description&quot;: &quot;The wearer&#39;s basic attacks and spell damage shred enemy Armor and Magic Resistance for 3 seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 308,
+    &quot;name&quot;: &quot;Randuin&#39;s Sanctum&quot;,
+    &quot;description&quot;: &quot;At the start of combat, all allies adjacent to the wearer gain bonus Armor and bonus Magic Resistance for the rest of combat.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 309,
+    &quot;name&quot;: &quot;Rocket-Propelled Fist&quot;,
+    &quot;description&quot;: &quot;At the start of combat, the wearer pulls the farthest enemy into melee range, stunning them for 1.5 seconds. Allies within range will prioritize attacking that enemy.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 310,
+    &quot;name&quot;: &quot;Zhonya&#39;s Paradox&quot;,
+    &quot;description&quot;: &quot;The first instance of damage that would reduce the wearer below 40% Health is prevented, causing them to become invulnerable for 2.5 seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isArtifact&quot;: true
+  },
+  {
+    &quot;id&quot;: 2011,
+    &quot;name&quot;: &quot;Luminous Deathblade&quot;,
+    &quot;description&quot;: &quot;Contributing to a kill grants the holder additional Attack Damage for the rest of combat. This effect can stack any number of times.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2066,
+    &quot;name&quot;: &quot;Dragon&#39;s Will&quot;,
+    &quot;description&quot;: &quot;Grants bonus Magic Resist (including components). On being hit by magic or true damage from an Ability, launch a fireball at the Ability&#39;s caster that deals magic damage equal to a percentage of their max Health.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Regenerate percentage max Health per second&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2045,
+    &quot;name&quot;: &quot;Frozen Heart of Gold&quot;,
+    &quot;description&quot;: &quot;Reduces the Attack Speed of nearby enemies.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Starting Mana&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2056,
+    &quot;name&quot;: &quot;Dvarapala Stoneplate&quot;,
+    &quot;description&quot;: &quot;The holder gains Armor and Magic Resist for each enemy targeting them.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Regenerate percentage max Health per second&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2012,
+    &quot;name&quot;: &quot;Demonslayer&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s Abilities and attacks do bonus damage. If the target has more health, the bonus damage increases.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2015,
+    &quot;name&quot;: &quot;Guardian Archangel&quot;,
+    &quot;description&quot;: &quot;Prevents the holder&#39;s first death, placing them in stasis instead. After a short delay, they return with restored Health and shed all negative effects.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Attack Speed&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2023,
+    &quot;name&quot;: &quot;Guinsoo&#39;s Reckoning&quot;,
+    &quot;description&quot;: &quot;Attacks grant bonus Attack Speed for the rest of combat. This bonus Attack Speed can stack any number of times.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2049,
+    &quot;name&quot;: &quot;Fist of Fairness&quot;,
+    &quot;description&quot;: &quot;At the beginning of each planning phase, the holder&#39;s basic attacks and spells deal additional damage and heals for a percentage of damage dealt.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2013,
+    &quot;name&quot;: &quot;Hextech Lifeblade&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s magic and true damage from Abilities heal them for a percentage of the damage dealt. Excess healing fuels a shield that protects the holder.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Ability Power&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2019,
+    &quot;name&quot;: &quot;Zenith Edge&quot;,
+    &quot;description&quot;: &quot;Grants Critical Strike Chance (including components) and Critical Strike damage. Each point of Critical Strike Chance above 100% becomes bonus Critical Strike Damage.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Critical Strike Damage&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2036,
+    &quot;name&quot;: &quot;Covalent Spark&quot;,
+    &quot;description&quot;: &quot;Nearby enemies have their Magic Resist reduced (does not stack). When they cast a spell, they are zapped taking magic damage equal to a percentage of their max Mana.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Regenerate percentage max Health per second&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2039,
+    &quot;name&quot;: &quot;Glamorous Gauntlet&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s magic and true damage from their Ability can critically strike. The holder gains bonus Critical Strike Damage.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2029,
+    &quot;name&quot;: &quot;Eternal Whisper&quot;,
+    &quot;description&quot;: &quot;When the holder inflicts a critical hit, the target&#39;s Armor is reduced for several seconds. This effect does not stack.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Critical Strike Chance&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2035,
+    &quot;name&quot;: &quot;Locket of the Targon Prime&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder and nearby allies in the same row gain a shield that blocks damage for several seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2037,
+    &quot;name&quot;: &quot;More More-ellonomicon&quot;,
+    &quot;description&quot;: &quot;When the holder deals magic or true damage with their Ability, they burn the target, dealing a percentage of the target&#39;s maximum Health as true damage over several seconds, and reducing healing for the duration of the burn.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Starting Mana&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2069,
+    &quot;name&quot;: &quot;Quickestsilver&quot;,
+    &quot;description&quot;: &quot;The holder gains immunity to crowd control in combat for several seconds.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Attack Speed&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2033,
+    &quot;name&quot;: &quot;Rabadon&#39;s Ascended Deathcap&quot;,
+    &quot;description&quot;: &quot;Grants bonus Ability Power (including components).&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2022,
+    &quot;name&quot;: &quot;Rapid Lightcannon&quot;,
+    &quot;description&quot;: &quot;Increases the holder&#39;s Attack Range and grants bonus Attack Speed (including components). The holder&#39;s attacks can no longer miss.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Attack Speed&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2047,
+    &quot;name&quot;: &quot;Radiant Redemption&quot;,
+    &quot;description&quot;: &quot;Periodically, the holder radiates an aura to nearby allies, healing them a percentage of their missing Health. Affected allies take reduced damage from multi-target abilities and attacks for several seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Health&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2026,
+    &quot;name&quot;: &quot;Runaan&#39;s Tempest&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s attacks fire a bolt at another nearby enemy, dealing a percentage of the holder&#39;s Attack Damage and applying on-hit effects. These bolts can critically strike.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Attack Speed&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2059,
+    &quot;name&quot;: &quot;Shroud of Reverence&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder shoots a beam straight ahead that delays affected enemies&#39; first spellcast, increasing their max Mana until they cast.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Starting Mana for all allies at the start of combat&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2014,
+    &quot;name&quot;: &quot;Spear of Hirana&quot;,
+    &quot;description&quot;: &quot;The holder&#39;s Basic Attacks restore additional Mana.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2024,
+    &quot;name&quot;: &quot;Statikk Favor&quot;,
+    &quot;description&quot;: &quot;Every third attack from the holder unleashes a chain lightning that bounces to nearby enemies, dealing magic damage and reducing their Magic Resist for several seconds.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2057,
+    &quot;name&quot;: &quot;Sunlight Cape&quot;,
+    &quot;description&quot;: &quot;Periodically, a random nearby enemy is burned a percentage of their maximum Health over several seconds. Any healing they receive is reduced.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Regenerate percentage max Health per second&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2099,
+    &quot;name&quot;: &quot;Rascal&#39;s Gloves&quot;,
+    &quot;description&quot;: &quot;At the beginning of each planning phase, the holder equips 2 temporary Radiant items. [Consumes Three Item Slots]&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2025,
+    &quot;name&quot;: &quot;Titan&#39;s Vow&quot;,
+    &quot;description&quot;: &quot;When the holder takes damage or inflicts a critical strike, they gain a stacking Attack Damage and Ability Power bonus.  This stacks up to a limit, at which point the holder gains Armor and Magic Resistance.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2079,
+    &quot;name&quot;: &quot;Banshee&#39;s Silence&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder and all nearby allies in the same row gain a shield that blocks the first enemy Ability.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Health for all allies at the start of combat&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2077,
+    &quot;name&quot;: &quot;Warmog&#39;s Pride&quot;,
+    &quot;description&quot;: &quot;Grants bonus Health (including components).&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Regenerate percentage max Health per second&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2017,
+    &quot;name&quot;: &quot;Zeke&#39;s Harmony&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder and all nearby allies in the same row gain Attack Speed and Lifesteal for the rest of combat.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2067,
+    &quot;name&quot;: &quot;Mistral&quot;,
+    &quot;description&quot;: &quot;When combat begins, the holder summons a whirlwind on the opposite side of the arena that removes the closest enemy from combat for several seconds. Ignores CC immunity.&quot;,
+    &quot;isUnique&quot;: true,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;radiantBonus&quot;: &quot;Attack Speed for all allies at the start of combat&quot;,
+    &quot;isArtifact&quot;: false
+  },
+  {
+    &quot;id&quot;: 2027,
+    &quot;name&quot;: &quot;Zz&#39;Rot Invitation&quot;,
+    &quot;description&quot;: &quot;At the start of combat, a Radiant Voidmother with bonus Health and Attack Damage aries and taunts nearby enemies. Radiant Voidmothers that arise from summoned units are only partially effective.&quot;,
+    &quot;isUnique&quot;: false,
+    &quot;isElusive&quot;: false,
+    &quot;isRadiant&quot;: true,
+    &quot;isArtifact&quot;: false
+  }
+]
+</code></pre></div>
 </details>
 
               

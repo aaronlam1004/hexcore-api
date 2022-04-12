@@ -502,14 +502,876 @@
 </tbody>
 </table>
 <h2 id="examples">Examples</h2>
+<p><strong>Base:</strong></p>
 <details class="success">
 <summary>/set6-5/champions</summary>
+<div class="highlight"><pre><span></span><code>[
+  {
+    &quot;name&quot;: &quot;Ahri&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Ahri&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Assassin&quot;,
+      &quot;Set6-5_Syndicate&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Alistar&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Alistar&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Colossus&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Ashe&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Ashe&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Syndicate&quot;,
+      &quot;Set6-5_Sniper&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Blitzcrank&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Blitzcrank&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Scrap&quot;,
+      &quot;Set6-5_Bodyguard&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Brand&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Brand&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Debonair&quot;,
+      &quot;Set6-5_Arcanist&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Braum&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Braum&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Syndicate&quot;,
+      &quot;Set6-5_Bodyguard&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Caitlyn&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Caitlyn&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Enforcer&quot;,
+      &quot;Set6-5_Sniper&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Camille&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Camille&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Clockwork&quot;,
+      &quot;Set6-5_Challenger&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Cho&#39;Gath&quot;,
+    &quot;id&quot;: &quot;TFT6-5_ChoGath&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mutant&quot;,
+      &quot;Set6-5_Colossus&quot;,
+      &quot;Set6-5_Bruiser&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Corki&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Corki&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Yordle&quot;,
+      &quot;Set6-5_Twinshot&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Darius&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Darius&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Syndicate&quot;,
+      &quot;Set6-5_Bodyguard&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Draven&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Draven&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Debonair&quot;,
+      &quot;Set6-5_Challenger&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Ekko&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Ekko&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Scrap&quot;,
+      &quot;Set6-5_Assassin&quot;,
+      &quot;Set6-5_Innovator&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Ezreal&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Ezreal&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Scrap&quot;,
+      &quot;Set6-5_Innovator&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Galio&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Galio&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Socialite&quot;,
+      &quot;Set6-5_Colossus&quot;,
+      &quot;Set6-5_Bodyguard&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Gangplank&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Gangplank&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mercenary&quot;,
+      &quot;Set6-5_Twinshot&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Gnar&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Gnar&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Yordle&quot;,
+      &quot;Set6-5_Socialite&quot;,
+      &quot;Set6-5_Striker&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Illaoi&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Illaoi&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mercenary&quot;,
+      &quot;Set6-5_Bruiser&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Irelia&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Irelia&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Scrap&quot;,
+      &quot;Set6-5_Striker&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Jarvan IV&quot;,
+    &quot;id&quot;: &quot;TFT6-5_JarvanIV&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Striker&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Jayce&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Jayce&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Enforcer&quot;,
+      &quot;Set6-5_Transformer&quot;,
+      &quot;Set6-5_Innovator&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Jhin&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Jhin&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Clockwork&quot;,
+      &quot;Set6-5_Sniper&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Jinx&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Jinx&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Scrap&quot;,
+      &quot;Set6-5_Rivals&quot;,
+      &quot;Set6-5_Twinshot&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Kai&#39;Sa&quot;,
+    &quot;id&quot;: &quot;TFT6-5_KaiSa&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mutant&quot;,
+      &quot;Set6-5_Challenger&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Kassadin&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Kassadin&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mutant&quot;,
+      &quot;Set6-5_Scholar&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Kha&#39;Zix&quot;,
+    &quot;id&quot;: &quot;TFT6-5_KhaZix&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mutant&quot;,
+      &quot;Set6-5_Assassin&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Leona&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Leona&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Debonair&quot;,
+      &quot;Set6-5_Bodyguard&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Lucian&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Lucian&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Twinshot&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Lulu&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Lulu&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Yordle&quot;,
+      &quot;Set6-5_Enchanter&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Malzahar&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Malzahar&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mutant&quot;,
+      &quot;Set6-5_Arcanist&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Miss Fortune&quot;,
+    &quot;id&quot;: &quot;TFT6-5_MissFortune&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mercenary&quot;,
+      &quot;Set6-5_Sniper&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Morgana&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Morgana&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Syndicate&quot;,
+      &quot;Set6-5_Enchanter&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Nocturne&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Nocturne&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Assassin&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Orianna&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Orianna&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Enchanter&quot;,
+      &quot;Set6-5_Clockwork&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Poppy&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Poppy&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Yordle&quot;,
+      &quot;Set6-5_Bodyguard&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Quinn&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Quinn&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mercenary&quot;,
+      &quot;Set6-5_Challenger&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Rek&#39;Sai&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Reksai&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mutant&quot;,
+      &quot;Set6-5_Bruiser&quot;,
+      &quot;Set6-5_Striker&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Renata&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Renata&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Chemtech&quot;,
+      &quot;Set6-5_Scholar&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Sejuani&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Sejuani&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Bruiser&quot;,
+      &quot;Set6-5_Enforcer&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Senna&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Senna&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Socialite&quot;,
+      &quot;Set6-5_Enchanter&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Seraphine&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Seraphine&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Socialite&quot;,
+      &quot;Set6-5_Innovator&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Silco&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Silco&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mastermind&quot;,
+      &quot;Set6-5_Scholar&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Singed&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Singed&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Chemtech&quot;,
+      &quot;Set6-5_Innovator&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Sivir&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Sivir&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Striker&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Swain&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Swain&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Arcanist&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Syndra&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Syndra&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Debonair&quot;,
+      &quot;Set6-5_Scholar&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Tahm Kench&quot;,
+    &quot;id&quot;: &quot;TFT6-5_TahmKench&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mercenary&quot;,
+      &quot;Set6-5_Glutton&quot;,
+      &quot;Set6-5_Bruiser&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Talon&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Talon&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Debonair&quot;,
+      &quot;Set6-5_Assassin&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Tryndamere&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Tryndamere&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Chemtech&quot;,
+      &quot;Set6-5_Challenger&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Twitch&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Twitch&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Chemtech&quot;,
+      &quot;Set6-5_Assassin&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Veigar&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Veigar&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Yordle-Lord&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Vex&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Vex&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Yordle&quot;,
+      &quot;Set6-5_Arcanist&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Vi&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Vi&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Enforcer&quot;,
+      &quot;Set6-5_Rivals&quot;,
+      &quot;Set6-5_Bruiser&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Viktor&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Viktor&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Chemtech&quot;,
+      &quot;Set6-5_Arcanist&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Warwick&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Warwick&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Chemtech&quot;,
+      &quot;Set6-5_Challenger&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Zac&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Zac&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Chemtech&quot;,
+      &quot;Set6-5_Bruiser&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Zeri&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Zeri&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Debonair&quot;,
+      &quot;Set6-5_Sniper&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Ziggs&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Ziggs&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Yordle&quot;,
+      &quot;Set6-5_Scrap&quot;,
+      &quot;Set6-5_Arcanist&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Zilean&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Zilean&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Clockwork&quot;,
+      &quot;Set6-5_Innovator&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Zyra&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Zyra&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Syndicate&quot;,
+      &quot;Set6-5_Scholar&quot;
+    ]
+  }
+]
+</code></pre></div>
 </details>
+<p><strong>Name:</strong></p>
 <details class="success">
 <summary>/set6-5/champions?name=alistar</summary>
+<div class="highlight"><pre><span></span><code>{
+  &quot;name&quot;: &quot;Alistar&quot;,
+  &quot;id&quot;: &quot;TFT6-5_Alistar&quot;,
+  &quot;cost&quot;: 4,
+  &quot;traits&quot;: [
+    &quot;Set6-5_Hextech&quot;,
+    &quot;Set6-5_Colossus&quot;
+  ]
+}
+</code></pre></div>
 </details>
+<details class="failure">
+<summary>/set6-5/champions?name=test</summary>
+<div class="highlight"><pre><span></span><code>{
+  &quot;status&quot;: 404,
+  &quot;type&quot;: &quot;champion&quot;,
+  &quot;message&quot;: &quot;test is not the name of any champion&quot;
+}
+</code></pre></div>
+</details>
+<p><strong>Cost:</strong></p>
+<details class="success">
+<summary>/set6-5/champions?cost=4 5</summary>
+<div class="highlight"><pre><span></span><code>[
+  {
+    &quot;name&quot;: &quot;Ahri&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Ahri&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Assassin&quot;,
+      &quot;Set6-5_Syndicate&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Alistar&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Alistar&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Colossus&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Braum&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Braum&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Syndicate&quot;,
+      &quot;Set6-5_Bodyguard&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Draven&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Draven&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Debonair&quot;,
+      &quot;Set6-5_Challenger&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Galio&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Galio&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Socialite&quot;,
+      &quot;Set6-5_Colossus&quot;,
+      &quot;Set6-5_Bodyguard&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Irelia&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Irelia&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Scrap&quot;,
+      &quot;Set6-5_Striker&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Jayce&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Jayce&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Enforcer&quot;,
+      &quot;Set6-5_Transformer&quot;,
+      &quot;Set6-5_Innovator&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Jhin&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Jhin&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Clockwork&quot;,
+      &quot;Set6-5_Sniper&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Jinx&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Jinx&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Scrap&quot;,
+      &quot;Set6-5_Rivals&quot;,
+      &quot;Set6-5_Twinshot&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Kai&#39;Sa&quot;,
+    &quot;id&quot;: &quot;TFT6-5_KaiSa&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mutant&quot;,
+      &quot;Set6-5_Challenger&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Kha&#39;Zix&quot;,
+    &quot;id&quot;: &quot;TFT6-5_KhaZix&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mutant&quot;,
+      &quot;Set6-5_Assassin&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Orianna&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Orianna&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Enchanter&quot;,
+      &quot;Set6-5_Clockwork&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Renata&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Renata&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Chemtech&quot;,
+      &quot;Set6-5_Scholar&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Seraphine&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Seraphine&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Socialite&quot;,
+      &quot;Set6-5_Innovator&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Silco&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Silco&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mastermind&quot;,
+      &quot;Set6-5_Scholar&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Sivir&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Sivir&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Striker&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Tahm Kench&quot;,
+    &quot;id&quot;: &quot;TFT6-5_TahmKench&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mercenary&quot;,
+      &quot;Set6-5_Glutton&quot;,
+      &quot;Set6-5_Bruiser&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Veigar&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Veigar&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Yordle-Lord&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Vi&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Vi&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Enforcer&quot;,
+      &quot;Set6-5_Rivals&quot;,
+      &quot;Set6-5_Bruiser&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Viktor&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Viktor&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Chemtech&quot;,
+      &quot;Set6-5_Arcanist&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Zeri&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Zeri&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Debonair&quot;,
+      &quot;Set6-5_Sniper&quot;
+    ]
+  }
+]
+</code></pre></div>
+</details>
+<p><strong>Traits:</strong></p>
 <details class="success">
 <summary>/set6-5/champions?traits=hextech colossus</summary>
+<div class="highlight"><pre><span></span><code>[
+  {
+    &quot;name&quot;: &quot;Alistar&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Alistar&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Colossus&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Cho&#39;Gath&quot;,
+    &quot;id&quot;: &quot;TFT6-5_ChoGath&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Mutant&quot;,
+      &quot;Set6-5_Colossus&quot;,
+      &quot;Set6-5_Bruiser&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Galio&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Galio&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Socialite&quot;,
+      &quot;Set6-5_Colossus&quot;,
+      &quot;Set6-5_Bodyguard&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Jarvan IV&quot;,
+    &quot;id&quot;: &quot;TFT6-5_JarvanIV&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Striker&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Lucian&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Lucian&quot;,
+    &quot;cost&quot;: 3,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Twinshot&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Nocturne&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Nocturne&quot;,
+    &quot;cost&quot;: 1,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Assassin&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Sejuani&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Sejuani&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Bruiser&quot;,
+      &quot;Set6-5_Enforcer&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Sivir&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Sivir&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Striker&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Swain&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Swain&quot;,
+    &quot;cost&quot;: 2,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Arcanist&quot;
+    ]
+  }
+]
+</code></pre></div>
 </details>
 
               
