@@ -5,10 +5,13 @@ var router = express.Router();
 
 const SETS = ["6", "6-5"]
 
-function BuildErrorJson(message) {
-
+function CreateErrorJson(status, errorType, errorMessage) {
+  return {
+    "status": status,
+    "type": errorType,
+    "message": errorMessage,
+  }
 }
-
 
 SETS.forEach((set) => {
   let folder = set.replace('-', '.');
@@ -30,7 +33,7 @@ SETS.forEach((set) => {
           return res.json(champion);
         }
       }
-      return res.status(404).send(`${req.query.name} is not present in this set.`);
+      return res.status(404).json(CreateErrorJson(404, "champion", `${req.query.name} is not the name of any champion`));
     }
 
     let retChamps = [...champions];
@@ -65,14 +68,17 @@ SETS.forEach((set) => {
           return res.json(trait);
         }
       }
+      return res.status(404).json(CreateErrorJson(404, "trait", `${req.query.name} is not the name of any trait`)); 
     }
 
     let retTraits = [...traits];
     if (req.query.type) {
+      let types = req.query.type.split(' ').map(type => { return type.toLowerCase(); });
       retTraits = retTraits.filter(trait => {
-        let queryType = req.query.type.toLowerCase();
-        if (trait["type"].toLowerCase() === queryType) {
-          return true;
+        for (let queryType of types) {
+          if (trait["type"].toLowerCase() === queryType) {
+            return true;
+          }
         }
         return false;
       });
@@ -88,6 +94,7 @@ SETS.forEach((set) => {
           return res.json(item);
         }
       }
+      return res.status(404).json(CreateErrorJson(404, "item", `${req.query.id} is not the id of any item`)); 
     }
 
     if (req.query.name) {
@@ -96,6 +103,7 @@ SETS.forEach((set) => {
           return res.json(item);
         }
       }
+      return res.status(404).json(CreateErrorJson(404, "item", `${req.query.name} is not the name of any item`)); 
     }
 
     let retItems = [...items];
@@ -123,8 +131,6 @@ SETS.forEach((set) => {
             break;
         }
       }
-      console.log(attributes);
-
       retItems = retItems.filter(item => {
         for (let attribute of attributes) {
           try {
@@ -150,6 +156,7 @@ SETS.forEach((set) => {
           return res.sendFile(`set${folder}/champions/${champion["id"]}.png`, {"root": './sets/'});
         }
       }
+      return res.status(404).json(CreateErrorJson(404, "champion", `${req.query.champion} is not the name of any champion`));
     }
 
     if (req.query.item) {
@@ -162,6 +169,7 @@ SETS.forEach((set) => {
           return res.sendFile(`set${folder}/items/${item["id"]}.png`, {"root": './sets/'});
         }
       }
+      return res.status(404).json(CreateErrorJson(404, "item", `${req.query.item} is not the id or name of any item`)); 
     }
 
     if (req.query.trait) {
@@ -171,8 +179,11 @@ SETS.forEach((set) => {
           return res.sendFile(`set${folder}/traits/${trait["name"]}.svg`, {"root": './sets/'});
         }
       }
+      return res.status(404).json(CreateErrorJson(404, "trait", `${req.query.trait} is not the name of any trait`)); 
     }
+
+    return res.status(404).json(CreateErrorJson(404, "images", `No champion, trait, or item specified`));   
   });
 });
 
-module.exports = router;
+module.exports = { router, CreateErrorJson };
