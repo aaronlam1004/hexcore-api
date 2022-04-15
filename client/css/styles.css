@@ -1,0 +1,37 @@
+h1 {
+  color: red;
+}
+
+.chosen-select {
+  width: 200px;
+}
+
+#api-output {
+  white-space: pre-line;
+  height: 400px;
+  overflow: scroll;
+  font-family: "Consolas", sans-serif;
+}
+
+#api-trait {
+  width: 15em;
+}
+
+#api-img-result {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.form-group {
+  display: inline-block;
+}
+
+nav a {
+  margin-left: 1em;
+}
+
+#api-sets {
+  margin-left: 0.5em;
+  margin-right: 1.5em;
+}
+

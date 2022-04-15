@@ -350,6 +350,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#all-sets" class="md-nav__link">
+    All Sets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#set-6" class="md-nav__link">
     Set 6
   </a>
@@ -466,6 +473,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#all-sets" class="md-nav__link">
+    All Sets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#set-6" class="md-nav__link">
     Set 6
   </a>
@@ -549,7 +563,26 @@
 </tbody>
 </table>
 <h3 id="set-attributes">Set Attributes</h3>
-<h4 id="set-6">Set 6</h4>
+<h4 id="all-sets"><u>All Sets</u></h4>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unique</td>
+<td>The item is unique (one per champion).</td>
+</tr>
+<tr>
+<td>elusive</td>
+<td>Cannot be crafted.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="set-6"><u>Set 6</u></h4>
 <table>
 <thead>
 <tr>
@@ -562,13 +595,9 @@
 <td>artifact</td>
 <td>The item is an artifact.</td>
 </tr>
-<tr>
-<td>unique</td>
-<td>The item is unique (one per champion).</td>
-</tr>
 </tbody>
 </table>
-<h4 id="set-65">Set 6.5</h4>
+<h4 id="set-65"><u>Set 6.5</u></h4>
 <table>
 <thead>
 <tr>
@@ -584,10 +613,6 @@
 <tr>
 <td>radiant</td>
 <td>The item is radiant.</td>
-</tr>
-<tr>
-<td>unique</td>
-<td>The item is unique (one per champion).</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +638,7 @@
 <h2 id="examples">Examples</h2>
 <p><strong>Base:</strong></p>
 <details class="success">
-<summary>/set6-5/items</summary>
+<summary>/set6.5/items</summary>
 <div class="highlight"><pre><span></span><code>[
   {
     &quot;id&quot;: 1,
@@ -1517,7 +1542,7 @@
 </details>
 <p><strong>Name/ID:</strong></p>
 <details class="success">
-<summary>/set6-5/items?name=edge of night</summary>
+<summary>/set6.5/items?name=edge of night</summary>
 <div class="highlight"><pre><span></span><code>{
   &quot;id&quot;: 15,
   &quot;name&quot;: &quot;Edge of Night&quot;,
@@ -1529,7 +1554,7 @@
 </code></pre></div>
 </details>
 <details class="success">
-<summary>/set6-5/items?id=306</summary>
+<summary>/set6.5/items?id=306</summary>
 <div class="highlight"><pre><span></span><code>{
   &quot;id&quot;: 306,
   &quot;name&quot;: &quot;Manazane&quot;,
@@ -1541,7 +1566,7 @@
 </code></pre></div>
 </details>
 <details class="failure">
-<summary>/set6-5/items?name=test</summary>
+<summary>/set6.5/items?name=test</summary>
 <div class="highlight"><pre><span></span><code>{
   &quot;status&quot;: 404,
   &quot;type&quot;: &quot;item&quot;,
@@ -1550,7 +1575,7 @@
 </code></pre></div>
 </details>
 <details class="failure">
-<summary>/set6-5/items?id=-1</summary>
+<summary>/set6.5/items?id=-1</summary>
 <div class="highlight"><pre><span></span><code>{
   &quot;status&quot;: 404,
   &quot;type&quot;: &quot;item&quot;,
@@ -1560,7 +1585,7 @@
 </details>
 <p><strong>Attributes:</strong></p>
 <details class="success">
-<summary>/set6-5/items?attr=artifact radiant</summary>
+<summary>/set6.5/items?attr=artifact radiant</summary>
 <div class="highlight"><pre><span></span><code>[
   {
     &quot;id&quot;: 301,

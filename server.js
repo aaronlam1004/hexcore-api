@@ -21,7 +21,7 @@ app.get('/demo', function(req, res) {
 
 app.use('/', setsRouter);
 
-app.all('/*', function (req, res) {
+app.all('/*', function(req, res) {
   res.json(CreateErrorJson(404, "path", `${req.path} does not exist`));
 });
 

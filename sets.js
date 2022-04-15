@@ -3,7 +3,7 @@ const express = require('express');
 
 var router = express.Router();
 
-const SETS = ["6", "6-5"]
+const SETS = ["6", "6.5"]
 
 function CreateErrorJson(status, errorType, errorMessage) {
   return {
@@ -14,15 +14,15 @@ function CreateErrorJson(status, errorType, errorMessage) {
 }
 
 SETS.forEach((set) => {
-  let folder = set.replace('-', '.');
+  let setName = set.replace('.', '-');
 
-  let championData = fs.readFileSync(`./sets/set${folder}/champions.json`);
+  let championData = fs.readFileSync(`./sets/set${set}/champions.json`);
   let champions = JSON.parse(championData);
 
-  let itemData = fs.readFileSync(`./sets/set${folder}/items.json`);
+  let itemData = fs.readFileSync(`./sets/set${set}/items.json`);
   let items = JSON.parse(itemData);
 
-  let traitData = fs.readFileSync(`./sets/set${folder}/traits.json`);
+  let traitData = fs.readFileSync(`./sets/set${set}/traits.json`);
   let traits = JSON.parse(traitData);
 
   router.get(`/set${set}/champions`, function(req, res) {
@@ -49,18 +49,18 @@ SETS.forEach((set) => {
       retChamps = retChamps.filter(champion => {
         for (let trait of traits) {
           let lowerTraits = champion["traits"].map(trait => { return trait.toLowerCase(); });
-          if (lowerTraits.includes(`set${set}_${trait}`)) {
+          console.log(`set${setName}_${trait}`);
+          if (lowerTraits.includes(`set${setName}_${trait}`)) {
             return true;
           }
         }
         return false;
       });
     }
-
     return res.json(retChamps);
   });
 
-  router.get(`/set${set}/traits`, function (req, res) {
+  router.get(`/set${set}/traits`, function(req, res) {
     if (req.query.name) {
       for (let trait of traits) {
         let name = req.query.name.toLowerCase();
@@ -87,7 +87,7 @@ SETS.forEach((set) => {
     return res.json(retTraits)
   });
 
-  router.get(`/set${set}/items`, function (req, res) {
+  router.get(`/set${set}/items`, function(req, res) {
     if (req.query.id) {
       for (let item of items) {
         if (item["id"] === parseInt(req.query.id)) {
@@ -148,12 +148,12 @@ SETS.forEach((set) => {
     return res.json(retItems);
   });
 
-  router.get(`/set${set}/imgs`, function (req, res) {
+  router.get(`/set${set}/imgs`, function(req, res) {
     if (req.query.champion) {
       for (let champion of champions) {
         let currChampion = champion["name"].toLowerCase();
         if (currChampion == req.query.champion.toLowerCase()) {
-          return res.sendFile(`set${folder}/champions/${champion["id"]}.png`, {"root": './sets/'});
+          return res.sendFile(`set${set}/champions/${champion["id"]}.png`, {"root": './sets/'});
         }
       }
       return res.status(404).json(CreateErrorJson(404, "champion", `${req.query.champion} is not the name of any champion`));
@@ -163,10 +163,10 @@ SETS.forEach((set) => {
       for (let item of items) {
         let currItem = item;
         if (currItem["id"] === Number(req.query.item)) {
-          return res.sendFile(`set${folder}/items/${item["id"]}.png`, {"root": './sets/'});
+          return res.sendFile(`set${set}/items/${item["id"]}.png`, {"root": './sets/'});
         }
         else if (currItem["name"].toLowerCase() === req.query.item.toLowerCase()) {
-          return res.sendFile(`set${folder}/items/${item["id"]}.png`, {"root": './sets/'});
+          return res.sendFile(`set${set}/items/${item["id"]}.png`, {"root": './sets/'});
         }
       }
       return res.status(404).json(CreateErrorJson(404, "item", `${req.query.item} is not the id or name of any item`)); 
@@ -176,7 +176,7 @@ SETS.forEach((set) => {
       for (let trait of traits) {
         let currTrait = trait;
         if (currTrait["name"].toLowerCase() === req.query.trait.toLowerCase()) {
-          return res.sendFile(`set${folder}/traits/${trait["name"]}.svg`, {"root": './sets/'});
+          return res.sendFile(`set${set}/traits/${trait["name"]}.svg`, {"root": './sets/'});
         }
       }
       return res.status(404).json(CreateErrorJson(404, "trait", `${req.query.trait} is not the name of any trait`)); 

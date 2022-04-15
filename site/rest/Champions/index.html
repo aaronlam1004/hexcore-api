@@ -504,7 +504,7 @@
 <h2 id="examples">Examples</h2>
 <p><strong>Base:</strong></p>
 <details class="success">
-<summary>/set6-5/champions</summary>
+<summary>/set6.5/champions</summary>
 <div class="highlight"><pre><span></span><code>[
   {
     &quot;name&quot;: &quot;Ahri&quot;,
@@ -1061,7 +1061,7 @@
 </details>
 <p><strong>Name:</strong></p>
 <details class="success">
-<summary>/set6-5/champions?name=alistar</summary>
+<summary>/set6.5/champions?name=alistar</summary>
 <div class="highlight"><pre><span></span><code>{
   &quot;name&quot;: &quot;Alistar&quot;,
   &quot;id&quot;: &quot;TFT6-5_Alistar&quot;,
@@ -1074,7 +1074,7 @@
 </code></pre></div>
 </details>
 <details class="failure">
-<summary>/set6-5/champions?name=test</summary>
+<summary>/set6.5/champions?name=test</summary>
 <div class="highlight"><pre><span></span><code>{
   &quot;status&quot;: 404,
   &quot;type&quot;: &quot;champion&quot;,
@@ -1084,7 +1084,7 @@
 </details>
 <p><strong>Cost:</strong></p>
 <details class="success">
-<summary>/set6-5/champions?cost=4 5</summary>
+<summary>/set6.5/champions?cost=4 5</summary>
 <div class="highlight"><pre><span></span><code>[
   {
     &quot;name&quot;: &quot;Ahri&quot;,
@@ -1284,7 +1284,7 @@
 </details>
 <p><strong>Traits:</strong></p>
 <details class="success">
-<summary>/set6-5/champions?traits=hextech colossus</summary>
+<summary>/set6.5/champions?traits=hextech colossus</summary>
 <div class="highlight"><pre><span></span><code>[
   {
     &quot;name&quot;: &quot;Alistar&quot;,
@@ -1367,6 +1367,41 @@
     &quot;cost&quot;: 2,
     &quot;traits&quot;: [
       &quot;Set6-5_Hextech&quot;,
+      &quot;Set6-5_Arcanist&quot;
+    ]
+  }
+]
+</code></pre></div>
+</details>
+<p><strong>Cost &amp; Traits</strong></p>
+<details class="success">
+<summary>/set6.5/champions?cost=4 5&amp;traits=scrap arcanist</summary>
+<div class="highlight"><pre><span></span><code>[
+  {
+    &quot;name&quot;: &quot;Irelia&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Irelia&quot;,
+    &quot;cost&quot;: 4,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Scrap&quot;,
+      &quot;Set6-5_Striker&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Jinx&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Jinx&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Scrap&quot;,
+      &quot;Set6-5_Rivals&quot;,
+      &quot;Set6-5_Twinshot&quot;
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Viktor&quot;,
+    &quot;id&quot;: &quot;TFT6-5_Viktor&quot;,
+    &quot;cost&quot;: 5,
+    &quot;traits&quot;: [
+      &quot;Set6-5_Chemtech&quot;,
       &quot;Set6-5_Arcanist&quot;
     ]
   }
