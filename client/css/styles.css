@@ -17,11 +17,6 @@ h1 {
   width: 15em;
 }
 
-#api-img-result {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .form-group {
   display: inline-block;
 }
@@ -35,3 +30,20 @@ nav a {
   margin-right: 1.5em;
 }
 
+.api-output {
+  display: inline-block;
+  vertical-align: top;
+  /* margin-left: 2em; */
+  overflow-y: scroll;
+  width: 35%;
+  height: 25%;
+}
+
+#api-img-result {
+  width: 150px;
+  height: 150px;
+}
+
+.card-body .chosen-container {
+  width: 100% !important;
+}

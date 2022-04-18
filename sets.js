@@ -49,7 +49,6 @@ SETS.forEach((set) => {
       retChamps = retChamps.filter(champion => {
         for (let trait of traits) {
           let lowerTraits = champion["traits"].map(trait => { return trait.toLowerCase(); });
-          console.log(`set${setName}_${trait}`);
           if (lowerTraits.includes(`set${setName}_${trait}`)) {
             return true;
           }

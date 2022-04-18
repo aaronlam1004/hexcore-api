@@ -1,3 +1,4 @@
+// Sets
 function GetCurrentSet() {
   return $("#api-sets").val();
 }
@@ -5,10 +6,20 @@ function GetCurrentSet() {
 function UpdateApiDemoString(apiType, url) {
 }
 
+// -- Champions Demo --
+function FilterChampionsWithApi() {
+  let costs = $("#api-champions-cost").chosen().val();
+  let traits = $("#api-champions-traits").chosen().val();
+  let filters ={ cost: costs.join(' '), traits: traits.join(' ') };
+  CallDataApis(GetCurrentSet(), "champions", filters).then((res) => {
+    $("#api-champions-output").text(JSON.stringify(res, undefined, 2));
+  });
+}
+
+// -- Traits Demo --
 function FillWithTraits() {
-  let set = GetCurrentSet();
   $("#api-champions-traits").empty();
-  CallDataApis(`/set${set}/traits`).then((res) => {
+  CallDataApis(GetCurrentSet(), "traits").then((res) => {
     for (let trait of res) {
       $("#api-champions-traits").append(`<option value="${trait["name"]}">${trait["name"]}</option>`);
     }
@@ -16,7 +27,18 @@ function FillWithTraits() {
   });
 }
 
-function UpdateApiImageCall() {
+// -- Items Demo --
+function FillWithAttributes() {
+  $("#api-items-attributes").empty();
+  let attributes = ATTRIBUTES["all"].concat(ATTRIBUTES[GetCurrentSet()]);
+  for (let attribute of attributes) {
+    $("#api-items-attributes").append(`<option value="${attribute}">${attribute}</option>`);
+  }
+  $("#api-items-attributes").trigger("chosen:updated");
+}
+
+// -- Image Demo --
+function UpdateApiImage() {
   let set = GetCurrentSet();
   var src;
   let imgQuery = $("#api-img-text").val();
@@ -45,71 +67,83 @@ function InitializeDemos() {
 
   // -- Champion API --
   // Traits
-  $("#api-champions-traits").chosen({ allow_single_deselect: true });
+  $("#api-champions-traits").chosen({allow_single_deselect: true});
   FillWithTraits();
 
   // Costs 
-  $("#api-champions-cost").chosen({ allow_single_deselect: true });
+  $("#api-champions-cost").chosen({allow_single_deselect: true});
   for (let cost = 1; cost <= 5; cost++) {
     $("#api-champions-cost").append(`<option value="${cost}">${cost}</option>`)
     $("#api-champions-cost").trigger("chosen:updated");
   }
   
-  // -- Trait API --
-  $("#api-traits-types").chosen({ allow_single_deselect: true });
+  // -- Traits Demo --
+  $("#api-traits-types").chosen({allow_single_deselect: true});
 
-  // -- Item API --
+  // -- Items Demo --
+  $("#api-items-attributes").chosen({allow_single_deselect: true});
+  FillWithAttributes();
 
-  // -- Image API --
-  $("#api-img-submit").click(function() {
-    UpdateApiImageCall();
+  // -- Image Demo --
+  $("#api-img-submit").click(() => {
+    GetImageSrc();
   });
 }
 
 function SetupEventHandlers() {
-  $("#api-img-submit").click(function() {
-    UpdateApiImageCall();
+  // Sets
+  $("#api-sets").change(() => {
+    FillWithTraits();
+    FillWithAttributes();
+  });
+  
+  // -- Champion API --
+  $("#api-champions-submit").click(() => {
+    let championName = $("#api-champions-name").val();
+    CallDataApis(GetCurrentSet(), "champions", {"name": championName}).then((res) => {
+      $("#api-champions-output").text(JSON.stringify(res, undefined, 2));
+    });
   });
 
-  $("#api-img-text").keypress(function(event) {
+  $("#api-champions-name").keypress((event) => {
     if (event.key === "Enter") {
-      UpdateApiImageCall();
+      let championName = $("#api-champions-name").val();
+      CallDataApis(GetCurrentSet(), "champions", {"name": championName}).then((res) => {
+        $("#api-champions-output").text(JSON.stringify(res, undefined, 2));
+      });
     }
   });
 
-  $("#api-sets").change(function() {
-    FillWithTraits();
+  $("#api-champions-traits").chosen().change(() => {
+    FilterChampionsWithApi();
+  });
+
+  $("#api-champions-cost").chosen().change(() => {
+    FilterChampionsWithApi();
+  });
+
+  // -- Traits Demo --
+  $("#api-traits-types").chosen().change(() => {
+    let typesString = $("#api-traits-types").chosen().val();
+    let filter = {type: typesString.join(' ').toLowerCase()};
+    CallDataApis(GetCurrentSet(), "traits", filter).then((res) => {
+      $("#api-traits-output").text(JSON.stringify(res, undefined, 2));
+    });
+  });
+  
+  // -- Image Demo --
+  $("#api-img-submit").click(() => {
+    UpdateApiImage();
+  });
+
+  $("#api-img-text").keypress((event) => {
+    if (event.key === "Enter") {
+      UpdateApiImage();
+    }
   });
 }
 
-$(document).ready(function() {
+$(document).ready(() => {
   InitializeDemos();
   SetupEventHandlers();
-  // $("#api-champions-traits").chosen().change(() => {
-  //   FilterTraits($("#api-champion-traits").chosen().val());
-  // });
-  // 
-  // 
-  // $("#api-cost").change(() => {
-  //   let set = $("#api-version").val().replace('.','-');
-  //   let cost = $("#api-cost").val();
-  //   if (cost === "all") {
-  //     GetApiCall(`/set${set}/champions`).then((res) => {
-  //       $("#api-output").text(JSON.stringify(res, null, 4));
-  //     });
-  //   }
-  //   else {
-  //     GetApiCall(`/set${set}/champions?cost=${cost}`).then((res) => {
-  //       $("#api-output").text(JSON.stringify(res, null, 4));
-  //     });
-  //   }
-  // });
-  // 
-  // $("#submit").click(function () {
-  //   let set = $("#api-version").val().replace('.','-');
-  //   let champion = $("#value").val();
-  //   GetApiCall(`/set${set}/champions?name=${champion}`).then((res) => {
-  //     $("#api-output").text(JSON.stringify(res, null, 4));
-  //   });
-  // });
 });
