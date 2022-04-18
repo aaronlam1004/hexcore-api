@@ -4,6 +4,7 @@ This was created because Riot's current API does not support the new sets (Set 6
 
 ## Web Service
 API server (including basic documentation) can be found/used here: https://hexcore-api.herokuapp.com/
+
 You can use the demo tool at: https://hexcore-api.herokuapp.com/demo
 
 ## TODOs
