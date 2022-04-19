@@ -130,6 +130,22 @@ function SetupEventHandlers() {
       $("#api-traits-output").text(JSON.stringify(res, undefined, 2));
     });
   });
+
+  $("#api-traits-submit").click(() => {
+    let traitName = $("#api-traits-name").val();
+    CallDataApis(GetCurrentSet(), "traits", {"name": traitName}).then((res) => {
+      $("#api-traits-output").text(JSON.stringify(res, undefined, 2));
+    });
+  });
+
+  $("#api-traits-name").keypress((event) => {
+    if (event.key === "Enter") {
+      let traitName = $("#api-traits-name").val();
+      CallDataApis(GetCurrentSet(), "traits", {"name": traitName}).then((res) => {
+        $("#api-traits-output").text(JSON.stringify(res, undefined, 2));
+      });
+    }
+  });
   
   // -- Image Demo --
   $("#api-img-submit").click(() => {
