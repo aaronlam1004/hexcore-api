@@ -1,33 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   color: red;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  margin-left: 1em;
 }
 
 .chosen-select {
   width: 200px;
 }
 
-#api-output {
-  white-space: pre-line;
-  height: 400px;
-  overflow: scroll;
-  font-family: "Consolas", sans-serif;
-}
-
-#api-trait {
-  width: 15em;
-}
-
 .form-group {
   display: inline-block;
 }
 
-nav a {
-  margin-left: 1em;
-}
-
-#api-sets {
-  margin-left: 0.5em;
-  margin-right: 1.5em;
+.card-body .chosen-container {
+  width: 100% !important;
 }
 
 .api-output {
@@ -39,11 +37,24 @@ nav a {
   height: 25%;
 }
 
+#api-champions {
+  padding-top: 5em;
+}
+
+#api-traits {
+  scroll-margin-top: 5em;
+}
+
+#api-sets {
+  margin-left: 0.5em;
+  margin-right: 1.5em;
+}
+
+#api-imgs {
+  padding-bottom: 5em;
+}
+
 #api-img-result {
   width: 150px;
   height: 150px;
-}
-
-.card-body .chosen-container {
-  width: 100% !important;
 }

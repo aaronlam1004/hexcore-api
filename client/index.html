@@ -65,15 +65,19 @@
     <!-- Items -->
     <section id="api-items">
       <h1>Items</h1>
-      <div>
-        <select>
+      <div class="form-group">
+        <select id="api-items-query">
           <option selected>Name</option>
           <option>ID</option>
         </select>
-        <input type="text" placeholder="Text"/>
-        <button id="api-champions-submit" class="btn btn-primary">Submit</button>
+        <input id="api-items-name" type="text" placeholder="Text"/>
+        <button id="api-items-submit" class="btn btn-primary">Submit</button>
         <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-items-collapse">Filter</button><br/>
-        <select data-placeholder="Attributes" multiple class="chosen-select" id="api-items-attributes"></select>
+        <div id="api-items-collapse" class="collapse">
+          <div class="card card-body">
+            <select data-placeholder="Attributes" multiple class="chosen-select" id="api-items-attributes"></select>
+          </div>
+        </div>
       </div>
       <div class="api-output"><pre id="api-items-output"></pre></div>
     </section>

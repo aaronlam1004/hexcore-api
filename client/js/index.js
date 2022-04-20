@@ -146,7 +146,48 @@ function SetupEventHandlers() {
       });
     }
   });
-  
+ 
+  // -- Item Demo --
+  $("#api-items-attributes").chosen().change(() => {
+    let itemString = $("#api-items-attributes").chosen().val();
+    let filter = {attr: itemString.join(' ').toLowerCase()};
+    CallDataApis(GetCurrentSet(), "items", filter).then((res) => {
+      $("#api-items-output").text(JSON.stringify(res, undefined, 2));
+    });
+  });
+
+  $("#api-items-submit").click(() => {
+    let itemQuery = $("#api-items-query").val()
+    let itemText = $("#api-items-name").val();
+    let filter = {};
+    if (itemQuery === "ID") {
+      filter["id"] = itemText;
+    }
+    else if (itemQuery === "Name") {
+      filter["name"] = itemText;
+    }
+    CallDataApis(GetCurrentSet(), "items", filter).then((res) => {
+      $("#api-items-output").text(JSON.stringify(res, undefined, 2));
+    });
+  });
+
+  $("#api-items-name").keypress((event) => {
+    if (event.key === "Enter") {
+      let itemQuery = $("#api-items-query").val()
+      let itemText = $("#api-items-name").val();
+      let filter = {};
+      if (itemQuery === "ID") {
+        filter["id"] = itemText;
+      }
+      else if (itemQuery === "Name") {
+        filter["name"] = itemText;
+      }
+      CallDataApis(GetCurrentSet(), "items", filter).then((res) => {
+        $("#api-items-output").text(JSON.stringify(res, undefined, 2));
+      });
+    }
+  });
+
   // -- Image Demo --
   $("#api-img-submit").click(() => {
     UpdateApiImage();
