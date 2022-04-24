@@ -3,23 +3,28 @@ function GetCurrentSet() {
   return $("#api-sets").val();
 }
 
-function UpdateApiDemoString(apiType, url) {
+function UpdateApiDemoOutput(url) {
+  let apiOutput = $("#api-string-output code")[0];
+  $(apiOutput).text(url);
 }
 
 // -- Champions Demo --
 function FilterChampionsWithApi() {
   let costs = $("#api-champions-cost").chosen().val();
   let traits = $("#api-champions-traits").chosen().val();
-  let filters ={ cost: costs.join(' '), traits: traits.join(' ') };
-  CallDataApis(GetCurrentSet(), "champions", filters).then((res) => {
+  let filters = { cost: costs.join(' '), traits: traits.join(' ') };
+  let url = GetDataApiUrl(GetCurrentSet(), "champions", filters);
+  Fetch(url).then((res) => {
     $("#api-champions-output").text(JSON.stringify(res, undefined, 2));
+    UpdateApiDemoOutput(GetDataApiUrl(GetCurrentSet(), "champions", filters));
   });
 }
 
 // -- Traits Demo --
 function FillWithTraits() {
   $("#api-champions-traits").empty();
-  CallDataApis(GetCurrentSet(), "traits").then((res) => {
+  let url = GetDataApiUrl(GetCurrentSet(), "traits");
+  Fetch(url).then((res) => {
     for (let trait of res) {
       $("#api-champions-traits").append(`<option value="${trait["name"]}">${trait["name"]}</option>`);
     }
@@ -57,6 +62,7 @@ function UpdateApiImage() {
       $("#api-img-result").attr("src", src);
       break;
   }
+  UpdateApiDemoOutput(src.substring(2));
 }
 
 function InitializeDemos() {
@@ -85,9 +91,6 @@ function InitializeDemos() {
   FillWithAttributes();
 
   // -- Image Demo --
-  $("#api-img-submit").click(() => {
-    GetImageSrc();
-  });
 }
 
 function SetupEventHandlers() {
@@ -100,16 +103,20 @@ function SetupEventHandlers() {
   // -- Champion API --
   $("#api-champions-submit").click(() => {
     let championName = $("#api-champions-name").val();
-    CallDataApis(GetCurrentSet(), "champions", {"name": championName}).then((res) => {
+    let url = GetDataApiUrl(GetCurrentSet(), "champions", {"name": championName});
+    Fetch(url).then((res) => {
       $("#api-champions-output").text(JSON.stringify(res, undefined, 2));
+      UpdateApiDemoOutput(url);
     });
   });
 
   $("#api-champions-name").keypress((event) => {
     if (event.key === "Enter") {
       let championName = $("#api-champions-name").val();
-      CallDataApis(GetCurrentSet(), "champions", {"name": championName}).then((res) => {
+      let url = GetDataApiUrl(GetCurrentSet(), "champions", {"name": championName});
+      Fetch(url).then((res) => {
         $("#api-champions-output").text(JSON.stringify(res, undefined, 2));
+        UpdateApiDemoOutput(url);
       });
     }
   });
@@ -126,23 +133,29 @@ function SetupEventHandlers() {
   $("#api-traits-types").chosen().change(() => {
     let typesString = $("#api-traits-types").chosen().val();
     let filter = {type: typesString.join(' ').toLowerCase()};
-    CallDataApis(GetCurrentSet(), "traits", filter).then((res) => {
+    let url = GetDataApiUrl(GetCurrentSet(), "traits", filter);
+    Fetch(url).then((res) => {
       $("#api-traits-output").text(JSON.stringify(res, undefined, 2));
+      UpdateApiDemoOutput(url);
     });
   });
 
   $("#api-traits-submit").click(() => {
     let traitName = $("#api-traits-name").val();
-    CallDataApis(GetCurrentSet(), "traits", {"name": traitName}).then((res) => {
+    let url = GetDataApiUrl(GetCurrentSet(), "traits", {"name": traitName});
+    Fetch(url).then((res) => {
       $("#api-traits-output").text(JSON.stringify(res, undefined, 2));
+      UpdateApiDemoOutput(url);
     });
   });
 
   $("#api-traits-name").keypress((event) => {
     if (event.key === "Enter") {
       let traitName = $("#api-traits-name").val();
-      CallDataApis(GetCurrentSet(), "traits", {"name": traitName}).then((res) => {
+      let url = GetDataApiUrl(GetCurrentSet(), "traits", {"name": traitName});
+      Fetch(url).then((res) => {
         $("#api-traits-output").text(JSON.stringify(res, undefined, 2));
+        UpdateApiDemoOutput(url);
       });
     }
   });
@@ -151,8 +164,10 @@ function SetupEventHandlers() {
   $("#api-items-attributes").chosen().change(() => {
     let itemString = $("#api-items-attributes").chosen().val();
     let filter = {attr: itemString.join(' ').toLowerCase()};
-    CallDataApis(GetCurrentSet(), "items", filter).then((res) => {
+    let url = GetDataApiUrl(GetCurrentSet(), "items", filter);
+    Fetch(url).then((res) => {
       $("#api-items-output").text(JSON.stringify(res, undefined, 2));
+      UpdateApiDemoOutput(url);
     });
   });
 
@@ -166,8 +181,10 @@ function SetupEventHandlers() {
     else if (itemQuery === "Name") {
       filter["name"] = itemText;
     }
-    CallDataApis(GetCurrentSet(), "items", filter).then((res) => {
+    let url = GetDataApiUrl(GetCurrentSet(), "items", filter);
+    Fetch(url).then((res) => {
       $("#api-items-output").text(JSON.stringify(res, undefined, 2));
+      UpdateApiDemoOutput(url);
     });
   });
 
@@ -182,8 +199,10 @@ function SetupEventHandlers() {
       else if (itemQuery === "Name") {
         filter["name"] = itemText;
       }
-      CallDataApis(GetCurrentSet(), "items", filter).then((res) => {
+      let url = GetDataApiUrl(GetCurrentSet(), "items", filter);
+      Fetch(url).then((res) => {
         $("#api-items-output").text(JSON.stringify(res, undefined, 2));
+        UpdateApiDemoOutput(url);
       });
     }
   });

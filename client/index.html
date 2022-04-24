@@ -28,74 +28,79 @@
         <select id="api-sets" class="nav-item"></select>
       </ul>
     </nav>
-    <!-- Champions -->
-    <section id="api-champions">
-      <h1>Champions</h1>
-      <div class="form-group">
-        <input type="text" id="api-champions-name" placeholder="Name"/>
-        <button id="api-champions-submit" class="btn btn-primary">Submit</button>
-        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-champions-collapse">Filter</button><br/>
-        <div id="api-champions-collapse" class="collapse">
-          <div class="card card-body">
-            <select data-placeholder="Cost" multiple class="chosen-select" id="api-champions-cost"></select>
-            <select data-placeholder="Trait" multiple class="chosen-select" id="api-champions-traits"></select>
+    <main>
+      <!-- Champions -->
+      <section id="api-champions">
+        <h1>Champions</h1>
+        <div class="form-group">
+          <input type="text" id="api-champions-name" placeholder="Name"/>
+          <button id="api-champions-submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-champions-collapse">Filter</button><br/>
+          <div id="api-champions-collapse" class="collapse">
+            <div class="card card-body">
+              <select data-placeholder="Cost" multiple class="chosen-select" id="api-champions-cost"></select>
+              <select data-placeholder="Trait" multiple class="chosen-select" id="api-champions-traits"></select>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="api-output"><pre id="api-champions-output"></pre></div>
-    </section>
-    <!-- Traits -->
-    <section id="api-traits">
-      <h1>Traits</h1>
-      <div class="form-group">
-        <input id="api-traits-name" type="text" placeholder="Name"/>
-        <button id="api-traits-submit" class="btn btn-primary">Submit</button>
-        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-traits-collapse">Filter</button><br/>
-        <div id="api-traits-collapse" class="collapse">
-          <div class="card card-body">
-            <select data-placeholder="Type" multiple class="chosen-select" id="api-traits-types">
-              <option>Class</option>
-              <option>Origin</option>
-            </select>
+        <div class="api-output"><pre id="api-champions-output"></pre></div>
+      </section>
+      <!-- Traits -->
+      <section id="api-traits">
+        <h1>Traits</h1>
+        <div class="form-group">
+          <input id="api-traits-name" type="text" placeholder="Name"/>
+          <button id="api-traits-submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-traits-collapse">Filter</button><br/>
+          <div id="api-traits-collapse" class="collapse">
+            <div class="card card-body">
+              <select data-placeholder="Type" multiple class="chosen-select" id="api-traits-types">
+                <option>Class</option>
+                <option>Origin</option>
+              </select>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="api-output"><pre id="api-traits-output"></pre></div>
-    </section>
-    <!-- Items -->
-    <section id="api-items">
-      <h1>Items</h1>
-      <div class="form-group">
-        <select id="api-items-query">
-          <option selected>Name</option>
-          <option>ID</option>
-        </select>
-        <input id="api-items-name" type="text" placeholder="Text"/>
-        <button id="api-items-submit" class="btn btn-primary">Submit</button>
-        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-items-collapse">Filter</button><br/>
-        <div id="api-items-collapse" class="collapse">
-          <div class="card card-body">
-            <select data-placeholder="Attributes" multiple class="chosen-select" id="api-items-attributes"></select>
+        <div class="api-output"><pre id="api-traits-output"></pre></div>
+      </section>
+      <!-- Items -->
+      <section id="api-items">
+        <h1>Items</h1>
+        <div class="form-group">
+          <select id="api-items-query">
+            <option selected>Name</option>
+            <option>ID</option>
+          </select>
+          <input id="api-items-name" type="text" placeholder="Text"/>
+          <button id="api-items-submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-items-collapse">Filter</button><br/>
+          <div id="api-items-collapse" class="collapse">
+            <div class="card card-body">
+              <select data-placeholder="Attributes" multiple class="chosen-select" id="api-items-attributes"></select>
+            </div>
           </div>
         </div>
+        <div class="api-output"><pre id="api-items-output"></pre></div>
+      </section>
+      <!-- Images -->
+      <section id="api-imgs">
+        <h1>Images</h1>
+        <div class="form-group">
+          <select id="api-img-select" class="form-select" aria-label="Image type">
+            <option selected>Champion</option>
+            <option>Trait</option>
+            <option>Item</option>
+          </select>
+          <input id="api-img-text" type="text" placeholder="Text"/>
+          <button id="api-img-submit" class="btn btn-primary">Submit</button>
+        </div>
+        <img class="api-output" id="api-img-result"/>
+      </section>
+      <div id="api-string-output">
+        <code></code>
       </div>
-      <div class="api-output"><pre id="api-items-output"></pre></div>
-    </section>
-    <!-- Images -->
-    <section id="api-imgs">
-      <h1>Images</h1>
-      <div class="form-group">
-        <select id="api-img-select" class="form-select" aria-label="Image type">
-          <option selected>Champion</option>
-          <option>Trait</option>
-          <option>Item</option>
-        </select>
-        <input id="api-img-text" type="text" placeholder="Text"/><br/>
-        <button id="api-img-submit" class="btn btn-primary">Submit</button>
-      </div>
-      <img class="api-output" id="api-img-result"/>
-    </section>
-    <script src="../js/api.service.js"></script>
-    <script src="../js/index.js"></script>
+      <script src="../js/api.service.js"></script>
+      <script src="../js/index.js"></script>
+    </main>
   </body>
 </html>

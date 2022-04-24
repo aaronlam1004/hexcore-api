@@ -10,7 +10,6 @@ function CreateQueryString(queries) {
   let queryString = "";
   let queryParts = Object.entries(queries);
   let numOfQueries = queryParts.length;
-  if (numOfQueries > 0) { queryString += '?'; }
   for (var i = 0; i < numOfQueries; i++) {
     let [query, param] = queryParts[i];
     if (param != "") {
@@ -20,12 +19,16 @@ function CreateQueryString(queries) {
       queryString += `${query}=${param}`;
     }
   }
+  if (queryString !== "") { queryString = '?' + queryString; }
   return queryString;
 }
 
-function CallDataApis(set, api, queries = {}) {
+function GetDataApiUrl(set, api, queries={}) {
   let queryString = CreateQueryString(queries);
-  let url = `/set${set}/${api}${queryString}`;
+  return `/set${set}/${api}${queryString}`;
+}
+
+function Fetch(url) {
   return fetch(url).then((res) => {
     try {
       return res.json();

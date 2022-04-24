@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  margin-left: 4em;
+}
+
 h1 {
   color: red;
 }
@@ -57,4 +61,12 @@ h1 {
 #api-img-result {
   width: 150px;
   height: 150px;
+}
+
+#api-string-output {
+  position: fixed;
+  font-size: 2em;
+  bottom: 0;
+  right: 0;
+  color: #000000;
 }
