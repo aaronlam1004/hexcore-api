@@ -11,7 +11,8 @@ You can use the demo tool at: https://hexcore-api.herokuapp.com/demo
 - [x] Items in TFT
 - [x] Finish up Set 6.5
 - [x] Web service to call API
-- [ ] Finish up web service GUI
-- [ ] Add other sets APIs
-- [ ] Improve documentation
+- [x] Finish up web demo
+- [x] Improve documentation
+- [ ] Better styling for web demo
 - [ ] Proper logo/icon
+- [ ] Add other sets APIs
