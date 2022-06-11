@@ -3,7 +3,7 @@ const express = require('express');
 
 var router = express.Router();
 
-const SETS = ["6", "6.5"]
+const SETS = ["7", "6", "6.5"]
 
 function CreateErrorJson(status, errorType, errorMessage) {
   return {

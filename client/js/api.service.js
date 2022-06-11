@@ -1,4 +1,4 @@
-const SETS = ["6.5", "6"];
+const SETS = ["7", "6.5", "6"];
 
 const ATTRIBUTES = {
   "all": ["Unique", "Elusive"],
