@@ -7,9 +7,12 @@ API server (including basic documentation) can be found/used here: https://hexco
 
 You can use the demo tool at: https://hexcore-api.herokuapp.com/demo
 
+## Current Sets Supported
+- Set 6: Gizmos and Gadgets
+- Set 6.5: Neon Nights
+- Set 7: Dragonlands
+
 ## TODOs
-- [x] Items in TFT
-- [x] Finish up Set 6.5
 - [x] Web service to call API
 - [x] Finish up web demo
 - [x] Improve documentation
