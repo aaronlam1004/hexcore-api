@@ -276,19 +276,73 @@
   {
     "key": "Set7_Legend",
     "name": "Legend",
-    "description": "",
+    "description": "Each combat: An adjacent ally bestows their spirit to the Legend, which gains 100% of their Health, Armor, and Magic Resistance, plus 40% of their Ability Power.",
     "type": "class",
     "sets": [
       {
         "style": "gold",
-        "min": 1
+        "min": 3
       }
     ]
   },
   {
     "key": "Set7_Mage",
     "name": "Mage",
-    "description": "",
+    "description": "Mages cast twice and have modified total Ability Power that increases at trait breakpoints.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "silver",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "gold",
+        "min": 7,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
+      }
+    ]
+  },
+  {
+    "key": "Set7_Mirage",
+    "name": "Mirage",
+    "description": "Mirage units gain a different Trait bonus from game to game. Variations: Electric Overload, Warlord, Pirate, Dawnbringer, Executioner, Spellsword, Duelist",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set7_Mystic",
+    "name": "Mystic",
+    "description": "Your team gains Magic Resist that increases at trait breakpoints.",
     "type": "class",
     "sets": [
       {
@@ -309,35 +363,6 @@
       {
         "style": "chromatic",
         "min": 5
-      }
-    ]
-  },
-  {
-    "key": "Set7_Mirage",
-    "name": "Mirage",
-    "description": "",
-    "type": "origin",
-    "sets": [
-      {
-        "style": "silver",
-        "min": 2,
-        "max": 3
-      },
-      {
-        "style": "gold",
-        "min": 4
-      }
-    ]
-  },
-  {
-    "key": "Set7_Mystic",
-    "name": "Mystic",
-    "description": "",
-    "type": "class",
-    "sets": [
-      {
-        "style": "gold",
-        "min": 1
       }
     ]
   },
@@ -366,68 +391,7 @@
   {
     "key": "Set7_Revel",
     "name": "Revel",
-    "description": "",
-    "type": "origin",
-    "sets": [
-      {
-        "style": "bronze",
-        "min": 3,
-        "max": 4
-      },
-      {
-        "style": "gold",
-        "min": 5,
-        "max": 6
-      },
-      {
-        "style": "chromatic",
-        "min": 7
-      }
-    ]
-  },
-  {
-    "key": "Set7_Scalescorn",
-    "name": "Scalescorn",
-    "description": "",
-    "type": "origin",
-    "sets": [
-      {
-        "style": "bronze",
-        "min": 3,
-        "max": 4
-      },
-      {
-        "style": "gold",
-        "min": 5,
-        "max": 6
-      },
-      {
-        "style": "chromatic",
-        "min": 7
-      }
-    ]
-  },
-  {
-    "key": "Set7_Shapeshifter",
-    "name": "Shapeshifter",
-    "description": "",
-    "type": "class",
-    "sets": [
-      {
-        "style": "silver",
-        "min": 3,
-        "max": 4
-      },
-      {
-        "style": "gold",
-        "min": 5
-      }
-    ]
-  },
-  {
-    "key": "Set7_Shimmerscale",
-    "name": "Shimmerscale",
-    "description": "",
+    "description": "After dealing damage with an Ability, launch a firecracker that deals magic damage increasing at trait breakpoints to a random enemy.",
     "type": "origin",
     "sets": [
       {
@@ -452,9 +416,31 @@
     ]
   },
   {
-    "key": "Set7_SpellThief",
-    "name": "Spell-Thief",
-    "description": "",
+    "key": "Set7_Scalescorn",
+    "name": "Scalescorn",
+    "description": "If you don't have a Dragon on your team, Scalescorn champions deal bonus magic damage increasing at trait breakpoints and take 30% reduced damage from enemies with more than 2500 Health.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set7_Shapeshifter",
+    "name": "Shapeshifter",
+    "description": "Transforming grants bonus maximum Health increasing at trait breakpoints, and heals for that amount.",
     "type": "class",
     "sets": [
       {
@@ -474,24 +460,53 @@
     ]
   },
   {
-    "key": "Set7_Starcaller",
-    "name": "Starcaller",
-    "description": "",
-    "type": "class",
+    "key": "Set7_Shimmerscale",
+    "name": "Shimmerscale",
+    "description": "Grant exclusive random Shimmerscale items that scale with gold. Number of unique items increases at trait breakpoints.",
+    "type": "origin",
     "sets": [
       {
         "style": "bronze",
-        "min": 2,
-        "max": 3
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "silver",
+        "min": 5,
+        "max": 6
       },
       {
         "style": "gold",
-        "min": 4,
-        "max": 5
+        "min": 7,
+        "max": 8
       },
       {
         "style": "chromatic",
-        "min": 6
+        "min": 9
+      }
+    ]
+  },
+  {
+    "key": "Set7_SpellThief",
+    "name": "Spell-Thief",
+    "description": "Nab a new ability after each cast and at the start of every round.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set7_Starcaller",
+    "name": "Starcaller",
+    "description": "The first Starcaller to cast their ability each combat heals you for (2/4/75), depending on their star level. Excess healing disintegrates an enemy champion.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
       }
     ]
   },
@@ -547,14 +562,9 @@
   {
     "key": "Set7_Trainer",
     "name": "Trainer",
-    "description": "",
+    "description": "Every round, each Trainer feeds 1 Snax to Nomsy, adding Health and Ability Power. Nomsy's star level increases every 25 Snax! At Trainer (3) Nomsy's ability deals double the damage!",
     "type": "origin",
     "sets": [
-      {
-        "style": "bronze",
-        "min": 1,
-        "max": 1
-      },
       {
         "style": "silver",
         "min": 2,
@@ -569,34 +579,49 @@
   {
     "key": "Set7_Warrior",
     "name": "Warrior",
-    "description": "",
+    "description": "Warrior attacks have 25% chance to increase the damage of their next attack. The extra damage increases at trait breakpoints.",
     "type": "class",
     "sets": [
       {
         "style": "bronze",
-        "min": 3,
-        "max": 4
+        "min": 2,
+        "max": 3
       },
       {
         "style": "gold",
-        "min": 5,
-        "max": 6
+        "min": 4,
+        "max": 5
       },
       {
         "style": "chromatic",
-        "min": 7
+        "min": 6
       }
     ]
   },
   {
     "key": "Set7_Whispers",
     "name": "Whispers",
-    "description": "",
+    "description": "Whispers damage shrinks enemies, reducing their Armor and Magic Resist by 40% for 6 seconds. When they damage a shrunken enemy, Whispers gain stacking Attack Damage and Ability Power increasing at trait breakpoints.",
     "type": "origin",
     "sets": [
       {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      }, 
+      {
         "style": "gold",
-        "min": 1
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
       }
     ]
   }
