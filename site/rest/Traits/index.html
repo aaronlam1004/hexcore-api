@@ -500,12 +500,68 @@
 <h2 id="examples">Examples</h2>
 <p><strong>Base:</strong></p>
 <details class="success">
-<summary>/set6.5/traits</summary>
+<summary>/set7/traits</summary>
 <div class="highlight"><pre><span></span><code>[
   {
-    &quot;key&quot;: &quot;Set6-5_Arcanist&quot;,
-    &quot;name&quot;: &quot;Arcanist&quot;,
-    &quot;description&quot;: &quot;Allies have increased Spell Power.&quot;,
+    &quot;key&quot;: &quot;Set7_Assassin&quot;,
+    &quot;name&quot;: &quot;Assassin&quot;,
+    &quot;description&quot;: &quot;Innate: Leap to the enemy backline when combat starts. Assassins&#39; Abilities can critically strike and they gain bonus Critical Strike Chance and bonus Critical Strike Damage increasing at trait breakpoints.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 6
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Astral&quot;,
+    &quot;name&quot;: &quot;Astral&quot;,
+    &quot;description&quot;: &quot;Every 5th Shop has increased odds to show Astral champions, and also grants an Astral orb. Your team gains bonus Ability Power. Ability Power and Orb value increases at trait breakpoints.&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 6,
+        &quot;max&quot;: 8
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 9
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Bard&quot;,
+    &quot;name&quot;: &quot;Bard&quot;,
+    &quot;description&quot;: &quot;Allies that survive player combat have a 20% chance to create a Doot. Bard always creates a Doot when dancing. Each Doot you collect increases your Shop odds by 1% for tiers 3, 4, and 5.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 1
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Bruiser&quot;,
+    &quot;name&quot;: &quot;Bruiser&quot;,
+    &quot;description&quot;: &quot;Your team gains bonus maximum Health increasing at trait breakpoints. Bruisers gain double this bonus. (2) 125 Health (4) 225 Health (6) 450 Health (8) 800 Health&quot;,
     &quot;type&quot;: &quot;class&quot;,
     &quot;sets&quot;: [
       {
@@ -530,9 +586,36 @@
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Assassin&quot;,
-    &quot;name&quot;: &quot;Assassin&quot;,
-    &quot;description&quot;: &quot;Innate. Assassins jump to the enemy backline at the start of combat. Assassins&#39; Abilities can critically strike, and they gain bonus Critical Strike Chance and Critical Strike Damage.&quot;,
+    &quot;key&quot;: &quot;Set7_Cannoneer&quot;,
+    &quot;name&quot;: &quot;Cannoneer&quot;,
+    &quot;description&quot;: &quot;Every 5th attack fires a cannon shot that explodes for physical damage increasing at trait breakpoints around the target.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 2
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 4
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 5
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Cavalier&quot;,
+    &quot;name&quot;: &quot;Cavalier&quot;,
+    &quot;description&quot;: &quot;Innate: Charge quickly towards their target whenever they move. Cavaliers gain Armor and Magic Resist that increases at trait breakpoints. At the start of combat and after each charge, gain double the amount for 4 seconds.&quot;,
     &quot;type&quot;: &quot;class&quot;,
     &quot;sets&quot;: [
       {
@@ -552,9 +635,190 @@
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Bodyguard&quot;,
-    &quot;name&quot;: &quot;Bodyguard&quot;,
-    &quot;description&quot;: &quot;Bodyguards have increased Armor. Shortly after combat begins, Bodyguards taunt adjacent enemies.&quot;,
+    &quot;key&quot;: &quot;Set7_Dragon&quot;,
+    &quot;name&quot;: &quot;Dragon&quot;,
+    &quot;description&quot;: &quot;Dragons provide +3 to the marked trait, but require 2 team slots. They also gain bonus Health. This trait is active with exactly 1 Dragon champion.&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 1
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Dragonmancer&quot;,
+    &quot;name&quot;: &quot;Dragonmancer&quot;,
+    &quot;description&quot;: &quot;Use the Dragonmancer Blessing to choose a Hero. The Hero gains massively increased Health and Ability Power, which increases at trait breakpoints and additionally by 5% per star level of your Dragonmancers.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 6,
+        &quot;max&quot;: 8
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 9
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Evoker&quot;,
+    &quot;name&quot;: &quot;Evoker&quot;,
+    &quot;description&quot;: &quot;Gain Mana that increases at trait breakpoints whenever an ally or enemy casts an Ability.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 6
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Guardian&quot;,
+    &quot;name&quot;: &quot;Guardian&quot;,
+    &quot;description&quot;: &quot;Once per combat at 50% Health, Guardians shield themselves and their closest ally. Shields stack and increase at trait breakpoints.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 6
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Guild&quot;,
+    &quot;name&quot;: &quot;Guild&quot;,
+    &quot;description&quot;: &quot;Grant a unique bonus to your team; Guild allies gain double the amount. Bonuses increases at trait breakpoints. Sejuani: Health Twitch: Attack Speed Ryze: Ability Power Talon: Attack Damage Bard: Mana per attack Emblem: Omnivamp (healing for a percentage of damage dealt)&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: 1
+      },
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 2
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 4
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 5,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 6
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Jade&quot;,
+    &quot;name&quot;: &quot;Jade&quot;,
+    &quot;description&quot;: &quot;Summon movable Jade Statues that grow in power. The number of statues increases at trait breakpoints. Each combat, allies adjacent to a statue gain Attack Speed and maximum Health healing increasing at trait breakpoints. When a statue is destroyed, it deals 50% of its Health as magic damage to nearby enemies.&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 6,
+        &quot;max&quot;: 8
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 9,
+        &quot;max&quot;: 11
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 12
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Legend&quot;,
+    &quot;name&quot;: &quot;Legend&quot;,
+    &quot;description&quot;: &quot;Each combat: An adjacent ally bestows their spirit to the Legend, which gains 100% of their Health, Armor, and Magic Resistance, plus 40% of their Ability Power.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 3
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Mage&quot;,
+    &quot;name&quot;: &quot;Mage&quot;,
+    &quot;description&quot;: &quot;Mages cast twice and have modified total Ability Power that increases at trait breakpoints.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 4
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 5,
+        &quot;max&quot;: 6
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 7,
+        &quot;max&quot;: 8
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 9
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Mirage&quot;,
+    &quot;name&quot;: &quot;Mirage&quot;,
+    &quot;description&quot;: &quot;Mirage units gain a different Trait bonus from game to game. Variations: Electric Overload, Warlord, Pirate, Dawnbringer, Executioner, Spellsword, Duelist&quot;,
     &quot;type&quot;: &quot;origin&quot;,
     &quot;sets&quot;: [
       {
@@ -579,9 +843,107 @@
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Bruiser&quot;,
-    &quot;name&quot;: &quot;Bruiser&quot;,
-    &quot;description&quot;: &quot;All allies have increased Health. Bruisers gain double this bonus.&quot;,
+    &quot;key&quot;: &quot;Set7_Mystic&quot;,
+    &quot;name&quot;: &quot;Mystic&quot;,
+    &quot;description&quot;: &quot;Your team gains Magic Resist that increases at trait breakpoints.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 2
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 4
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 5
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Ragewing&quot;,
+    &quot;name&quot;: &quot;Ragewing&quot;,
+    &quot;description&quot;: &quot;Converts Mana to Rage; attacks generate 15 Rage. After casting an Ability, enrage for 4 seconds, gaining Attack Speed and Omnivamp increasing at trait breakpoints. Rage cannot be gained during the enrage buff&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 6,
+        &quot;max&quot;: 8
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 9
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Revel&quot;,
+    &quot;name&quot;: &quot;Revel&quot;,
+    &quot;description&quot;: &quot;After dealing damage with an Ability, launch a firecracker that deals magic damage increasing at trait breakpoints to a random enemy.&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 2
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 4
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 5
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Scalescorn&quot;,
+    &quot;name&quot;: &quot;Scalescorn&quot;,
+    &quot;description&quot;: &quot;If you don&#39;t have a Dragon on your team, Scalescorn champions deal bonus magic damage increasing at trait breakpoints and take 30% reduced damage from enemies with more than 2500 Health.&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 6
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Shapeshifter&quot;,
+    &quot;name&quot;: &quot;Shapeshifter&quot;,
+    &quot;description&quot;: &quot;Transforming grants bonus maximum Health increasing at trait breakpoints, and heals for that amount.&quot;,
     &quot;type&quot;: &quot;class&quot;,
     &quot;sets&quot;: [
       {
@@ -590,52 +952,20 @@
         &quot;max&quot;: 3
       },
       {
-        &quot;style&quot;: &quot;silver&quot;,
+        &quot;style&quot;: &quot;gold&quot;,
         &quot;min&quot;: 4,
         &quot;max&quot;: 5
       },
       {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 6,
-        &quot;max&quot;: 7
-      },
-      {
         &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 8
+        &quot;min&quot;: 6
       }
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Challenger&quot;,
-    &quot;name&quot;: &quot;Challenger&quot;,
-    &quot;description&quot;: &quot;Challengers have increased Attack Speed. Upon landing a takedown on their target, challengers will dash to a new target, doubling this bonus for 2.5 seconds.&quot;,
-    &quot;type&quot;: &quot;class&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 2,
-        &quot;max&quot;: 3
-      },
-      {
-        &quot;style&quot;: &quot;silver&quot;,
-        &quot;min&quot;: 4,
-        &quot;max&quot;: 5
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 6,
-        &quot;max&quot;: 7
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 8
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Chemtech&quot;,
-    &quot;name&quot;: &quot;Chemtech&quot;,
-    &quot;description&quot;: &quot;After dropping below 60% Health, Chemtech champions gain 25% Damage Reduction, 50% Attack Speed, and regenerate 5% of their maximum Health each second. Breakpoints add to the duration of this effect.&quot;,
+    &quot;key&quot;: &quot;Set7_Shimmerscale&quot;,
+    &quot;name&quot;: &quot;Shimmerscale&quot;,
+    &quot;description&quot;: &quot;Grant exclusive random Shimmerscale items that scale with gold. Number of unique items increases at trait breakpoints.&quot;,
     &quot;type&quot;: &quot;origin&quot;,
     &quot;sets&quot;: [
       {
@@ -660,22 +990,34 @@
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Colossus&quot;,
-    &quot;name&quot;: &quot;Colossus&quot;,
-    &quot;description&quot;: &quot;Innate: Colossus are bigger, more powerful, and take up two slots in your army. (1) Colossus are immune to Crowd Control effects. (2) Colossus take reduced damage.&quot;,
+    &quot;key&quot;: &quot;Set7_SpellThief&quot;,
+    &quot;name&quot;: &quot;Spell-Thief&quot;,
+    &quot;description&quot;: &quot;Nab a new ability after each cast and at the start of every round.&quot;,
     &quot;type&quot;: &quot;class&quot;,
     &quot;sets&quot;: [
       {
         &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 2
+        &quot;min&quot;: 1
       }
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Clockwork&quot;,
-    &quot;name&quot;: &quot;Clockwork&quot;,
-    &quot;description&quot;: &quot;All allies have increased Attack Speed, and additional Attack Speed for each Hextech Augment you own.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
+    &quot;key&quot;: &quot;Set7_Starcaller&quot;,
+    &quot;name&quot;: &quot;Starcaller&quot;,
+    &quot;description&quot;: &quot;The first Starcaller to cast their ability each combat heals you for (2/4/75), depending on their star level. Excess healing disintegrates an enemy champion.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 1
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Swiftshot&quot;,
+    &quot;name&quot;: &quot;Swiftshot&quot;,
+    &quot;description&quot;: &quot;Innate: gain 2 hex Attack Range. Swiftshots gain Attack Speed increasing at trait breakpoints for each hex between themselves and their target.&quot;,
+    &quot;type&quot;: &quot;class&quot;,
     &quot;sets&quot;: [
       {
         &quot;style&quot;: &quot;bronze&quot;,
@@ -694,87 +1036,9 @@
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Debonair&quot;,
-    &quot;name&quot;: &quot;Debonair&quot;,
-    &quot;description&quot;: &quot;Debonair champions gain bonus Health and Ability Power. If there is a Debonair VIP in play, they activate their unique bonus. (Sell the old VIP for a chance to see a new one in your Shop.)&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 5,
-        &quot;max&quot;: 6
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 7
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Enchanter&quot;,
-    &quot;name&quot;: &quot;Enchanter&quot;,
-    &quot;description&quot;: &quot;Enchanters&#39; healing and shielding are stronger, and all Allies gain increased Magic Resistance.&quot;,
-    &quot;type&quot;: &quot;class&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 2,
-        &quot;max&quot;: 2
-      },
-      {
-        &quot;style&quot;: &quot;silver&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 3
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 4,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 5
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Enforcer&quot;,
-    &quot;name&quot;: &quot;Enforcer&quot;,
-    &quot;description&quot;: &quot;Enforcers detain enemies at the start of combat for 4 seconds, temporarily removing them from combat.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;silver&quot;,
-        &quot;min&quot;: 2,
-        &quot;max&quot;: 3
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 4
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Glutton&quot;,
-    &quot;name&quot;: &quot;Glutton&quot;,
-    &quot;description&quot;: &quot;Once per planning phase, you can feed a unit to Tahm Kench. This unit is consumed, granting permanent bonus stats. The more valuable the unit, the bigger the bonus. To feed Tahm Kench, hover a unit over him until his mouth opens, then release. Bonuses: Bodyguard (Armor), Enchanter (Magic Resist), Bruisers/Protector (Health), other (Ability Power)&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 1
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Hextech&quot;,
-    &quot;name&quot;: &quot;Hextech&quot;,
-    &quot;description&quot;: &quot;At the start of combat and every few seconds, the Hexcore sends out a pulse that grants a shield for Hextech champions that, while active, adds bonus magic damage on attacks.&quot;,
+    &quot;key&quot;: &quot;Set7_Tempest&quot;,
+    &quot;name&quot;: &quot;Tempest&quot;,
+    &quot;description&quot;: &quot;After 9 seconds, lightning strikes the battlefield. Enemies are stunned for 1 second and take a percent of their maximum Health as true damage increasing at trait breakpoints. Tempest champions gain Attack Speed increasing at trait breakpoints.&quot;,
     &quot;type&quot;: &quot;origin&quot;,
     &quot;sets&quot;: [
       {
@@ -799,172 +1063,11 @@
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Innovator&quot;,
-    &quot;name&quot;: &quot;Innovator&quot;,
-    &quot;description&quot;: &quot;Innovators build a mechanical companion to join their battle.&quot;,
-    &quot;type&quot;: &quot;class&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 5,
-        &quot;max&quot;: 6
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 7
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Mastermind&quot;,
-    &quot;name&quot;: &quot;Mastermind&quot;,
-    &quot;description&quot;: &quot;At the start of combat, the Mastermind grants the 2 allies directly in front of him Mana.&quot;,
-    &quot;type&quot;: &quot;class&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 1
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Mercenary&quot;,
-    &quot;name&quot;: &quot;Mercenary&quot;,
-    &quot;description&quot;: &quot;Gain a treasure chest that opens when you win combat against a player. At the start of each planning phase, roll the dice to add more loot to the chest! The longer you&#39;ve gone without opening the chest, the luckier the dice. (3) Roll two dice. (5) Roll a third dice that grants you a bonus orb right away.&quot;,
+    &quot;key&quot;: &quot;Set7_Trainer&quot;,
+    &quot;name&quot;: &quot;Trainer&quot;,
+    &quot;description&quot;: &quot;Every round, each Trainer feeds 1 Snax to Nomsy, adding Health and Ability Power. Nomsy&#39;s star level increases every 25 Snax! At Trainer (3) Nomsy&#39;s ability deals double the damage!&quot;,
     &quot;type&quot;: &quot;origin&quot;,
     &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 5,
-        &quot;max&quot;: 6
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 7
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Mutant&quot;,
-    &quot;name&quot;: &quot;Mutant&quot;,
-    &quot;description&quot;: &quot;Mutants gain unique bonuses. These are different each game.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 5,
-        &quot;max&quot;: 6
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 7
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Rivals&quot;,
-    &quot;name&quot;: &quot;Rivals&quot;,
-    &quot;description&quot;: &quot;This trait is active when you have eaxtly 1 unique Rival unit, as Rivals refuse to work together. Vi&#39;s Mana cost is reduced. Jinx gains Attack Speed for 3 seconds after scoring a takedown.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 1
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Scholar&quot;,
-    &quot;name&quot;: &quot;Scholar&quot;,
-    &quot;description&quot;: &quot;All allies restore some mana every 2 seconds.&quot;,
-    &quot;type&quot;: &quot;class&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 2,
-        &quot;max&quot;: 3
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 4,
-        &quot;max&quot;: 5
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 6
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Scrap&quot;,
-    &quot;name&quot;: &quot;Scrap&quot;,
-    &quot;description&quot;: &quot;At the start of combat, a number of incomplete components on Scrap champions turn into an ephemeral full item for that combat. Additionally, at the start of combat, Scrap champions also gain a Health shield for each item equipped in your army.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 2,
-        &quot;max&quot;: 3
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 4,
-        &quot;max&quot;: 5
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 6
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Sniper&quot;,
-    &quot;name&quot;: &quot;Sniper&quot;,
-    &quot;description&quot;: &quot;Snipers deal bonus damage for each hex between themselves and their target.&quot;,
-    &quot;type&quot;: &quot;class&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 2,
-        &quot;max&quot;: 3
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 4,
-        &quot;max&quot;: 5
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 6
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Socialite&quot;,
-    &quot;name&quot;: &quot;Socialite&quot;,
-    &quot;description&quot;: &quot;Socialite reveal a spotlight on the battlefield. The unit standing in the spotlight at the start of combat gains unique bonuses. (1) Bonus Damage (2) Bonus Mana Regen (3) Bonus Omnivamp&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 1,
-        &quot;max&quot;: 1
-      },
       {
         &quot;style&quot;: &quot;silver&quot;,
         &quot;min&quot;: 2,
@@ -972,75 +1075,14 @@
       },
       {
         &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 5
+        &quot;min&quot;: 3
       }
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Striker&quot;,
-    &quot;name&quot;: &quot;Striker&quot;,
-    &quot;description&quot;: &quot;Strikers gain bonus Attack Damage.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 2,
-        &quot;max&quot;: 3
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 4,
-        &quot;max&quot;: 5
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 6
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Syndicate&quot;,
-    &quot;name&quot;: &quot;Syndicate&quot;,
-    &quot;description&quot;: &quot;Chosen allies are cloaked in shadows, gaining Omnivamp, Armor, and Magic Resistance.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 5,
-        &quot;max&quot;: 6
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 7
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Transformer&quot;,
-    &quot;name&quot;: &quot;Transformer&quot;,
-    &quot;description&quot;: &quot;Transformers have two forms that they can swap in between during planning phase depending on whether they are placed in the frontline or backline.&quot;,
-    &quot;type&quot;: &quot;class&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 1
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Twinshot&quot;,
-    &quot;name&quot;: &quot;Twinshot&quot;,
-    &quot;description&quot;: &quot;Twinshots gain bonus Attack Damage. When a Twinshot attacks, they have a chance to attack twice instead.&quot;,
+    &quot;key&quot;: &quot;Set7_Warrior&quot;,
+    &quot;name&quot;: &quot;Warrior&quot;,
+    &quot;description&quot;: &quot;Warrior attacks have 25% chance to increase the damage of their next attack. The extra damage increases at trait breakpoints.&quot;,
     &quot;type&quot;: &quot;class&quot;,
     &quot;sets&quot;: [
       {
@@ -1060,66 +1102,37 @@
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Yordle&quot;,
-    &quot;name&quot;: &quot;Yordle&quot;,
-    &quot;description&quot;: &quot;After combat with a player, a random free Yordle appears on your bench!&quot;,
+    &quot;key&quot;: &quot;Set7_Whispers&quot;,
+    &quot;name&quot;: &quot;Whispers&quot;,
+    &quot;description&quot;: &quot;Whispers damage shrinks enemies, reducing their Armor and Magic Resist by 40% for 6 seconds. When they damage a shrunken enemy, Whispers gain stacking Attack Damage and Ability Power increasing at trait breakpoints.&quot;,
     &quot;type&quot;: &quot;origin&quot;,
     &quot;sets&quot;: [
       {
         &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 4,
         &quot;max&quot;: 5
       },
       {
         &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 6
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Yordle-Lord&quot;,
-    &quot;name&quot;: &quot;Yordle-Lord&quot;,
-    &quot;description&quot;: &quot;Benefits from the Yordle trait.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
+        &quot;min&quot;: 6,
+        &quot;max&quot;: 7
+      },
       {
         &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 1
+        &quot;min&quot;: 8
       }
     ]
   }
 ]
 </code></pre></div>
 </details>
-<p><strong>Name:</strong></p>
-<details class="success">
-<summary>/set6.5/traits?name=sniper</summary>
-<div class="highlight"><pre><span></span><code>{
-  &quot;key&quot;: &quot;Set6-5_Sniper&quot;,
-  &quot;name&quot;: &quot;Sniper&quot;,
-  &quot;description&quot;: &quot;Snipers deal bonus damage for each hex between themselves and their target.&quot;,
-  &quot;type&quot;: &quot;class&quot;,
-  &quot;sets&quot;: [
-    {
-      &quot;style&quot;: &quot;bronze&quot;,
-      &quot;min&quot;: 2,
-      &quot;max&quot;: 3
-    },
-    {
-      &quot;style&quot;: &quot;gold&quot;,
-      &quot;min&quot;: 4,
-      &quot;max&quot;: 5
-    },
-    {
-      &quot;style&quot;: &quot;chromatic&quot;,
-      &quot;min&quot;: 6
-    }
-  ]
-}
-</code></pre></div>
-</details>
 <details class="failure">
-<summary>/set6.5/traits?name=test</summary>
+<summary>/set7/traits?name=test</summary>
 <div class="highlight"><pre><span></span><code>{
   &quot;status&quot;: 404,
   &quot;type&quot;: &quot;trait&quot;,
@@ -1129,12 +1142,110 @@
 </details>
 <p><strong>Type:</strong></p>
 <details class="success">
-<summary>/set6.5/items?type=origin</summary>
+<summary>/set7/items?type=origin</summary>
 <div class="highlight"><pre><span></span><code>[
   {
-    &quot;key&quot;: &quot;Set6-5_Bodyguard&quot;,
-    &quot;name&quot;: &quot;Bodyguard&quot;,
-    &quot;description&quot;: &quot;Bodyguards have increased Armor. Shortly after combat begins, Bodyguards taunt adjacent enemies.&quot;,
+    &quot;key&quot;: &quot;Set7_Astral&quot;,
+    &quot;name&quot;: &quot;Astral&quot;,
+    &quot;description&quot;: &quot;Every 5th Shop has increased odds to show Astral champions, and also grants an Astral orb. Your team gains bonus Ability Power. Ability Power and Orb value increases at trait breakpoints.&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 6,
+        &quot;max&quot;: 8
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 9
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Dragon&quot;,
+    &quot;name&quot;: &quot;Dragon&quot;,
+    &quot;description&quot;: &quot;Dragons provide +3 to the marked trait, but require 2 team slots. They also gain bonus Health. This trait is active with exactly 1 Dragon champion.&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 1
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Guild&quot;,
+    &quot;name&quot;: &quot;Guild&quot;,
+    &quot;description&quot;: &quot;Grant a unique bonus to your team; Guild allies gain double the amount. Bonuses increases at trait breakpoints. Sejuani: Health Twitch: Attack Speed Ryze: Ability Power Talon: Attack Damage Bard: Mana per attack Emblem: Omnivamp (healing for a percentage of damage dealt)&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: 1
+      },
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 2
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 4
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 5,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 6
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Jade&quot;,
+    &quot;name&quot;: &quot;Jade&quot;,
+    &quot;description&quot;: &quot;Summon movable Jade Statues that grow in power. The number of statues increases at trait breakpoints. Each combat, allies adjacent to a statue gain Attack Speed and maximum Health healing increasing at trait breakpoints. When a statue is destroyed, it deals 50% of its Health as magic damage to nearby enemies.&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 6,
+        &quot;max&quot;: 8
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 9,
+        &quot;max&quot;: 11
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 12
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Mirage&quot;,
+    &quot;name&quot;: &quot;Mirage&quot;,
+    &quot;description&quot;: &quot;Mirage units gain a different Trait bonus from game to game. Variations: Electric Overload, Warlord, Pirate, Dawnbringer, Executioner, Spellsword, Duelist&quot;,
     &quot;type&quot;: &quot;origin&quot;,
     &quot;sets&quot;: [
       {
@@ -1159,9 +1270,80 @@
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Chemtech&quot;,
-    &quot;name&quot;: &quot;Chemtech&quot;,
-    &quot;description&quot;: &quot;After dropping below 60% Health, Chemtech champions gain 25% Damage Reduction, 50% Attack Speed, and regenerate 5% of their maximum Health each second. Breakpoints add to the duration of this effect.&quot;,
+    &quot;key&quot;: &quot;Set7_Ragewing&quot;,
+    &quot;name&quot;: &quot;Ragewing&quot;,
+    &quot;description&quot;: &quot;Converts Mana to Rage; attacks generate 15 Rage. After casting an Ability, enrage for 4 seconds, gaining Attack Speed and Omnivamp increasing at trait breakpoints. Rage cannot be gained during the enrage buff&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 6,
+        &quot;max&quot;: 8
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 9
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Revel&quot;,
+    &quot;name&quot;: &quot;Revel&quot;,
+    &quot;description&quot;: &quot;After dealing damage with an Ability, launch a firecracker that deals magic damage increasing at trait breakpoints to a random enemy.&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 2
+      },
+      {
+        &quot;style&quot;: &quot;silver&quot;,
+        &quot;min&quot;: 3,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 4
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 5
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Scalescorn&quot;,
+    &quot;name&quot;: &quot;Scalescorn&quot;,
+    &quot;description&quot;: &quot;If you don&#39;t have a Dragon on your team, Scalescorn champions deal bonus magic damage increasing at trait breakpoints and take 30% reduced damage from enemies with more than 2500 Health.&quot;,
+    &quot;type&quot;: &quot;origin&quot;,
+    &quot;sets&quot;: [
+      {
+        &quot;style&quot;: &quot;bronze&quot;,
+        &quot;min&quot;: 2,
+        &quot;max&quot;: 3
+      },
+      {
+        &quot;style&quot;: &quot;gold&quot;,
+        &quot;min&quot;: 4,
+        &quot;max&quot;: 5
+      },
+      {
+        &quot;style&quot;: &quot;chromatic&quot;,
+        &quot;min&quot;: 6
+      }
+    ]
+  },
+  {
+    &quot;key&quot;: &quot;Set7_Shimmerscale&quot;,
+    &quot;name&quot;: &quot;Shimmerscale&quot;,
+    &quot;description&quot;: &quot;Grant exclusive random Shimmerscale items that scale with gold. Number of unique items increases at trait breakpoints.&quot;,
     &quot;type&quot;: &quot;origin&quot;,
     &quot;sets&quot;: [
       {
@@ -1186,82 +1368,9 @@
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Clockwork&quot;,
-    &quot;name&quot;: &quot;Clockwork&quot;,
-    &quot;description&quot;: &quot;All allies have increased Attack Speed, and additional Attack Speed for each Hextech Augment you own.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 2,
-        &quot;max&quot;: 3
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 4,
-        &quot;max&quot;: 5
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 6
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Debonair&quot;,
-    &quot;name&quot;: &quot;Debonair&quot;,
-    &quot;description&quot;: &quot;Debonair champions gain bonus Health and Ability Power. If there is a Debonair VIP in play, they activate their unique bonus. (Sell the old VIP for a chance to see a new one in your Shop.)&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 5,
-        &quot;max&quot;: 6
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 7
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Enforcer&quot;,
-    &quot;name&quot;: &quot;Enforcer&quot;,
-    &quot;description&quot;: &quot;Enforcers detain enemies at the start of combat for 4 seconds, temporarily removing them from combat.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;silver&quot;,
-        &quot;min&quot;: 2,
-        &quot;max&quot;: 3
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 4
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Glutton&quot;,
-    &quot;name&quot;: &quot;Glutton&quot;,
-    &quot;description&quot;: &quot;Once per planning phase, you can feed a unit to Tahm Kench. This unit is consumed, granting permanent bonus stats. The more valuable the unit, the bigger the bonus. To feed Tahm Kench, hover a unit over him until his mouth opens, then release. Bonuses: Bodyguard (Armor), Enchanter (Magic Resist), Bruisers/Protector (Health), other (Ability Power)&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 1
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Hextech&quot;,
-    &quot;name&quot;: &quot;Hextech&quot;,
-    &quot;description&quot;: &quot;At the start of combat and every few seconds, the Hexcore sends out a pulse that grants a shield for Hextech champions that, while active, adds bonus magic damage on attacks.&quot;,
+    &quot;key&quot;: &quot;Set7_Tempest&quot;,
+    &quot;name&quot;: &quot;Tempest&quot;,
+    &quot;description&quot;: &quot;After 9 seconds, lightning strikes the battlefield. Enemies are stunned for 1 second and take a percent of their maximum Health as true damage increasing at trait breakpoints. Tempest champions gain Attack Speed increasing at trait breakpoints.&quot;,
     &quot;type&quot;: &quot;origin&quot;,
     &quot;sets&quot;: [
       {
@@ -1286,94 +1395,11 @@
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Mercenary&quot;,
-    &quot;name&quot;: &quot;Mercenary&quot;,
-    &quot;description&quot;: &quot;Gain a treasure chest that opens when you win combat against a player. At the start of each planning phase, roll the dice to add more loot to the chest! The longer you&#39;ve gone without opening the chest, the luckier the dice. (3) Roll two dice. (5) Roll a third dice that grants you a bonus orb right away.&quot;,
+    &quot;key&quot;: &quot;Set7_Trainer&quot;,
+    &quot;name&quot;: &quot;Trainer&quot;,
+    &quot;description&quot;: &quot;Every round, each Trainer feeds 1 Snax to Nomsy, adding Health and Ability Power. Nomsy&#39;s star level increases every 25 Snax! At Trainer (3) Nomsy&#39;s ability deals double the damage!&quot;,
     &quot;type&quot;: &quot;origin&quot;,
     &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 5,
-        &quot;max&quot;: 6
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 7
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Mutant&quot;,
-    &quot;name&quot;: &quot;Mutant&quot;,
-    &quot;description&quot;: &quot;Mutants gain unique bonuses. These are different each game.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 5,
-        &quot;max&quot;: 6
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 7
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Rivals&quot;,
-    &quot;name&quot;: &quot;Rivals&quot;,
-    &quot;description&quot;: &quot;This trait is active when you have eaxtly 1 unique Rival unit, as Rivals refuse to work together. Vi&#39;s Mana cost is reduced. Jinx gains Attack Speed for 3 seconds after scoring a takedown.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 1
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Scrap&quot;,
-    &quot;name&quot;: &quot;Scrap&quot;,
-    &quot;description&quot;: &quot;At the start of combat, a number of incomplete components on Scrap champions turn into an ephemeral full item for that combat. Additionally, at the start of combat, Scrap champions also gain a Health shield for each item equipped in your army.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 2,
-        &quot;max&quot;: 3
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 4,
-        &quot;max&quot;: 5
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 6
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Socialite&quot;,
-    &quot;name&quot;: &quot;Socialite&quot;,
-    &quot;description&quot;: &quot;Socialite reveal a spotlight on the battlefield. The unit standing in the spotlight at the start of combat gains unique bonuses. (1) Bonus Damage (2) Bonus Mana Regen (3) Bonus Omnivamp&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 1,
-        &quot;max&quot;: 1
-      },
       {
         &quot;style&quot;: &quot;silver&quot;,
         &quot;min&quot;: 2,
@@ -1381,19 +1407,14 @@
       },
       {
         &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 5
+        &quot;min&quot;: 3
       }
     ]
   },
   {
-    &quot;key&quot;: &quot;Set6-5_Striker&quot;,
-    &quot;name&quot;: &quot;Striker&quot;,
-    &quot;description&quot;: &quot;Strikers gain bonus Attack Damage.&quot;,
+    &quot;key&quot;: &quot;Set7_Whispers&quot;,
+    &quot;name&quot;: &quot;Whispers&quot;,
+    &quot;description&quot;: &quot;Whispers damage shrinks enemies, reducing their Armor and Magic Resist by 40% for 6 seconds. When they damage a shrunken enemy, Whispers gain stacking Attack Damage and Ability Power increasing at trait breakpoints.&quot;,
     &quot;type&quot;: &quot;origin&quot;,
     &quot;sets&quot;: [
       {
@@ -1402,64 +1423,18 @@
         &quot;max&quot;: 3
       },
       {
-        &quot;style&quot;: &quot;gold&quot;,
+        &quot;style&quot;: &quot;silver&quot;,
         &quot;min&quot;: 4,
         &quot;max&quot;: 5
       },
       {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 6
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Syndicate&quot;,
-    &quot;name&quot;: &quot;Syndicate&quot;,
-    &quot;description&quot;: &quot;Chosen allies are cloaked in shadows, gaining Omnivamp, Armor, and Magic Resistance.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 4
-      },
-      {
         &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 5,
-        &quot;max&quot;: 6
+        &quot;min&quot;: 6,
+        &quot;max&quot;: 7
       },
       {
         &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 7
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Yordle&quot;,
-    &quot;name&quot;: &quot;Yordle&quot;,
-    &quot;description&quot;: &quot;After combat with a player, a random free Yordle appears on your bench!&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;bronze&quot;,
-        &quot;min&quot;: 3,
-        &quot;max&quot;: 5
-      },
-      {
-        &quot;style&quot;: &quot;gold&quot;,
-        &quot;min&quot;: 6
-      }
-    ]
-  },
-  {
-    &quot;key&quot;: &quot;Set6-5_Yordle-Lord&quot;,
-    &quot;name&quot;: &quot;Yordle-Lord&quot;,
-    &quot;description&quot;: &quot;Benefits from the Yordle trait.&quot;,
-    &quot;type&quot;: &quot;origin&quot;,
-    &quot;sets&quot;: [
-      {
-        &quot;style&quot;: &quot;chromatic&quot;,
-        &quot;min&quot;: 1
+        &quot;min&quot;: 8
       }
     ]
   }

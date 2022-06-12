@@ -33,8 +33,8 @@
       <section id="api-champions">
         <h1>Champions</h1>
         <div class="form-group">
-          <input type="text" id="api-champions-name" placeholder="Name"/>
-          <button id="api-champions-submit" class="btn btn-primary">Submit</button>
+          <select id="api-champions-name"></select>
+          <button id="api-champions-all" class="btn btn-primary">All</button>
           <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-champions-collapse">Filter</button><br/>
           <div id="api-champions-collapse" class="collapse">
             <div class="card card-body">
@@ -49,8 +49,8 @@
       <section id="api-traits">
         <h1>Traits</h1>
         <div class="form-group">
-          <input id="api-traits-name" type="text" placeholder="Name"/>
-          <button id="api-traits-submit" class="btn btn-primary">Submit</button>
+          <select id="api-traits-name"></select>
+          <button id="api-traits-all" class="btn btn-primary">All</button>
           <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-traits-collapse">Filter</button><br/>
           <div id="api-traits-collapse" class="collapse">
             <div class="card card-body">
@@ -71,7 +71,7 @@
             <option selected>Name</option>
             <option>ID</option>
           </select>
-          <input id="api-items-name" type="text" placeholder="Text"/>
+          <select id="api-items-select"></select>
           <button id="api-items-submit" class="btn btn-primary">Submit</button>
           <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-items-collapse">Filter</button><br/>
           <div id="api-items-collapse" class="collapse">
