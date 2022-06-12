@@ -1,0 +1,628 @@
+[
+  {
+    "key": "Set7_Assassin",
+    "name": "Assassin",
+    "description": "Innate: Leap to the enemy backline when combat starts. Assassins' Abilities can critically strike and they gain bonus Critical Strike Chance and bonus Critical Strike Damage increasing at trait breakpoints.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set7_Astral",
+    "name": "Astral",
+    "description": "Every 5th Shop has increased odds to show Astral champions, and also grants an Astral orb. Your team gains bonus Ability Power. Ability Power and Orb value increases at trait breakpoints.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
+      }
+    ]
+  },
+  {
+    "key": "Set7_Bard",
+    "name": "Bard",
+    "description": "Allies that survive player combat have a 20% chance to create a Doot. Bard always creates a Doot when dancing. Each Doot you collect increases your Shop odds by 1% for tiers 3, 4, and 5.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set7_Bruiser",
+    "name": "Bruiser",
+    "description": "Your team gains bonus maximum Health increasing at trait breakpoints. Bruisers gain double this bonus. (2) 125 Health (4) 225 Health (6) 450 Health (8) 800 Health",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set7_Cannoneer",
+    "name": "Cannoneer",
+    "description": "Every 5th attack fires a cannon shot that explodes for physical damage increasing at trait breakpoints around the target.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 4
+      },
+      {
+        "style": "chromatic",
+        "min": 5
+      }
+    ]
+  },
+  {
+    "key": "Set7_Cavalier",
+    "name": "Cavalier",
+    "description": "Innate: Charge quickly towards their target whenever they move. Cavaliers gain Armor and Magic Resist that increases at trait breakpoints. At the start of combat and after each charge, gain double the amount for 4 seconds.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set7_Dragon",
+    "name": "Dragon",
+    "description": "Dragons provide +3 to the marked trait, but require 2 team slots. They also gain bonus Health. This trait is active with exactly 1 Dragon champion.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set7_Dragonmancer",
+    "name": "Dragonmancer",
+    "description": "Use the Dragonmancer Blessing to choose a Hero. The Hero gains massively increased Health and Ability Power, which increases at trait breakpoints and additionally by 5% per star level of your Dragonmancers.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
+      }
+    ]
+  },
+  {
+    "key": "Set7_Evoker",
+    "name": "Evoker",
+    "description": "Gain Mana that increases at trait breakpoints whenever an ally or enemy casts an Ability.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set7_Guardian",
+    "name": "Guardian",
+    "description": "Once per combat at 50% Health, Guardians shield themselves and their closest ally. Shields stack and increase at trait breakpoints.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set7_Guild",
+    "name": "Guild",
+    "description": "Grant a unique bonus to your team; Guild allies gain double the amount. Bonuses increases at trait breakpoints. Sejuani: Health Twitch: Attack Speed Ryze: Ability Power Talon: Attack Damage Bard: Mana per attack Emblem: Omnivamp (healing for a percentage of damage dealt)",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 4
+      },
+      {
+        "style": "gold",
+        "min": 5,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set7_Jade",
+    "name": "Jade",
+    "description": "Summon movable Jade Statues that grow in power. The number of statues increases at trait breakpoints. Each combat, allies adjacent to a statue gain Attack Speed and maximum Health healing increasing at trait breakpoints. When a statue is destroyed, it deals 50% of its Health as magic damage to nearby enemies.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "silver",
+        "min": 6,
+        "max": 8
+      },
+      {
+        "style": "gold",
+        "min": 9,
+        "max": 11
+      },
+      {
+        "style": "chromatic",
+        "min": 12 
+      }
+    ]
+  },
+  {
+    "key": "Set7_Legend",
+    "name": "Legend",
+    "description": "Each combat: An adjacent ally bestows their spirit to the Legend, which gains 100% of their Health, Armor, and Magic Resistance, plus 40% of their Ability Power.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 3
+      }
+    ]
+  },
+  {
+    "key": "Set7_Mage",
+    "name": "Mage",
+    "description": "Mages cast twice and have modified total Ability Power that increases at trait breakpoints.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "silver",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "gold",
+        "min": 7,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
+      }
+    ]
+  },
+  {
+    "key": "Set7_Mirage",
+    "name": "Mirage",
+    "description": "Mirage units gain a different Trait bonus from game to game. Variations: Electric Overload, Warlord, Pirate, Dawnbringer, Executioner, Spellsword, Duelist",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set7_Mystic",
+    "name": "Mystic",
+    "description": "Your team gains Magic Resist that increases at trait breakpoints.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 4
+      },
+      {
+        "style": "chromatic",
+        "min": 5
+      }
+    ]
+  },
+  {
+    "key": "Set7_Ragewing",
+    "name": "Ragewing",
+    "description": "Converts Mana to Rage; attacks generate 15 Rage. After casting an Ability, enrage for 4 seconds, gaining Attack Speed and Omnivamp increasing at trait breakpoints. Rage cannot be gained during the enrage buff",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
+      }
+    ]
+  },
+  {
+    "key": "Set7_Revel",
+    "name": "Revel",
+    "description": "After dealing damage with an Ability, launch a firecracker that deals magic damage increasing at trait breakpoints to a random enemy.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 4
+      },
+      {
+        "style": "chromatic",
+        "min": 5
+      }
+    ]
+  },
+  {
+    "key": "Set7_Scalescorn",
+    "name": "Scalescorn",
+    "description": "If you don't have a Dragon on your team, Scalescorn champions deal bonus magic damage increasing at trait breakpoints and take 30% reduced damage from enemies with more than 2500 Health.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set7_Shapeshifter",
+    "name": "Shapeshifter",
+    "description": "Transforming grants bonus maximum Health increasing at trait breakpoints, and heals for that amount.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set7_Shimmerscale",
+    "name": "Shimmerscale",
+    "description": "Grant exclusive random Shimmerscale items that scale with gold. Number of unique items increases at trait breakpoints.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "silver",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "gold",
+        "min": 7,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
+      }
+    ]
+  },
+  {
+    "key": "Set7_SpellThief",
+    "name": "Spell-Thief",
+    "description": "Nab a new ability after each cast and at the start of every round.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set7_Starcaller",
+    "name": "Starcaller",
+    "description": "The first Starcaller to cast their ability each combat heals you for (2/4/75), depending on their star level. Excess healing disintegrates an enemy champion.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set7_Swiftshot",
+    "name": "Swiftshot",
+    "description": "Innate: gain 2 hex Attack Range. Swiftshots gain Attack Speed increasing at trait breakpoints for each hex between themselves and their target.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set7_Tempest",
+    "name": "Tempest",
+    "description": "After 9 seconds, lightning strikes the battlefield. Enemies are stunned for 1 second and take a percent of their maximum Health as true damage increasing at trait breakpoints. Tempest champions gain Attack Speed increasing at trait breakpoints.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  },
+  {
+    "key": "Set7_Trainer",
+    "name": "Trainer",
+    "description": "Every round, each Trainer feeds 1 Snax to Nomsy, adding Health and Ability Power. Nomsy's star level increases every 25 Snax! At Trainer (3) Nomsy's ability deals double the damage!",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "silver",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "gold",
+        "min": 3
+      }
+    ]
+  },
+  {
+    "key": "Set7_Warrior",
+    "name": "Warrior",
+    "description": "Warrior attacks have 25% chance to increase the damage of their next attack. The extra damage increases at trait breakpoints.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Set7_Whispers",
+    "name": "Whispers",
+    "description": "Whispers damage shrinks enemies, reducing their Armor and Magic Resist by 40% for 6 seconds. When they damage a shrunken enemy, Whispers gain stacking Attack Damage and Ability Power increasing at trait breakpoints.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      }, 
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ]
+  }
+]
