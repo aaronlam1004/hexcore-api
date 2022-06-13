@@ -46,15 +46,15 @@ SETS.forEach((set) => {
 
     if (req.query.traits) {
       let traits = req.query.traits.split(' ').map(trait => { return trait.toLowerCase(); });
-      retChamps = retChamps.filter(champion => {
-        for (let trait of traits) {
+      for (let trait of traits) {
+        retChamps = retChamps.filter(champion => {
           let lowerTraits = champion["traits"].map(trait => { return trait.toLowerCase(); });
           if (lowerTraits.includes(`set${setName}_${trait}`)) {
             return true;
           }
-        }
-        return false;
-      });
+          return false;
+        });
+      }
     }
     return res.json(retChamps);
   });
