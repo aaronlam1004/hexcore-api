@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
       <a class="navbar-brand" href="#">Hexcore API Demos</a>
       <ul class="navbar-nav mr-auto">
-        <a class="nav-item" href="#api-champions">Champions</a>
+        <a class="nav-item" href="#api-champion">Champions</a>
         <a class="nav-item" href="#api-traits">Traits</a>
         <a class="nav-item" href="#api-items">Items</a>
         <a class="nav-item" href="#api-imgs">Images</a>
@@ -33,68 +33,67 @@
       <section id="api-champions">
         <h1>Champions</h1>
         <div class="form-group">
-          <select id="api-champions-name"></select>
-          <button id="api-champions-all" class="btn btn-primary">All</button>
-          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-champions-collapse">Filter</button><br/>
-          <div id="api-champions-collapse" class="collapse">
+          <select id="api-champion-names"></select>
+          <button id="api-champion-all" class="btn btn-primary">All</button>
+          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-champion-collapse">Filter</button><br/>
+          <div id="api-champion-collapse" class="collapse">
             <div class="card card-body">
-              <select data-placeholder="Cost" multiple class="chosen-select" id="api-champions-cost"></select>
-              <select data-placeholder="Trait" multiple class="chosen-select" id="api-champions-traits"></select>
+              <select data-placeholder="Cost" multiple class="chosen-select" id="api-champion-cost"></select>
+              <select data-placeholder="Trait" multiple class="chosen-select" id="api-champion-traits"></select>
             </div>
           </div>
         </div>
-        <div class="api-output"><pre id="api-champions-output"></pre></div>
+        <div class="api-output"><pre id="api-champion-output"></pre></div>
       </section>
       <!-- Traits -->
       <section id="api-traits">
         <h1>Traits</h1>
         <div class="form-group">
-          <select id="api-traits-name"></select>
-          <button id="api-traits-all" class="btn btn-primary">All</button>
-          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-traits-collapse">Filter</button><br/>
-          <div id="api-traits-collapse" class="collapse">
+          <select id="api-trait-names"></select>
+          <button id="api-trait-all" class="btn btn-primary">All</button>
+          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-trait-collapse">Filter</button><br/>
+          <div id="api-trait-collapse" class="collapse">
             <div class="card card-body">
-              <select data-placeholder="Type" multiple class="chosen-select" id="api-traits-types">
+              <select data-placeholder="Type" multiple class="chosen-select" id="api-trait-types">
                 <option>Class</option>
                 <option>Origin</option>
               </select>
             </div>
           </div>
         </div>
-        <div class="api-output"><pre id="api-traits-output"></pre></div>
+        <div class="api-output"><pre id="api-trait-output"></pre></div>
       </section>
       <!-- Items -->
       <section id="api-items">
         <h1>Items</h1>
         <div class="form-group">
-          <select id="api-items-query">
+          <select id="api-item-query">
             <option selected>Name</option>
             <option>ID</option>
           </select>
-          <select id="api-items-select"></select>
-          <button id="api-items-submit" class="btn btn-primary">Submit</button>
-          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-items-collapse">Filter</button><br/>
-          <div id="api-items-collapse" class="collapse">
+          <select id="api-item-select"></select>
+          <button id="api-item-all" class="btn btn-primary">All</button>
+          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-item-collapse">Filter</button><br/>
+          <div id="api-item-collapse" class="collapse">
             <div class="card card-body">
-              <select data-placeholder="Attributes" multiple class="chosen-select" id="api-items-attributes"></select>
+              <select data-placeholder="Attributes" multiple class="chosen-select" id="api-item-attributes"></select>
             </div>
           </div>
         </div>
-        <div class="api-output"><pre id="api-items-output"></pre></div>
+        <div class="api-output"><pre id="api-item-output"></pre></div>
       </section>
       <!-- Images -->
       <section id="api-imgs">
         <h1>Images</h1>
         <div class="form-group">
-          <select id="api-img-select" class="form-select" aria-label="Image type">
+          <select id="api-img-query" class="form-select" aria-label="Image type">
             <option selected>Champion</option>
             <option>Trait</option>
             <option>Item</option>
           </select>
-          <input id="api-img-text" type="text" placeholder="Text"/>
-          <button id="api-img-submit" class="btn btn-primary">Submit</button>
+          <select id="api-img-select"></select>
         </div>
-        <img class="api-output" id="api-img-result"/>
+        <img class="api-output" id="api-img-result" src="../resources/imgs/pengu.png" onerror='this.src="../resources/imgs/pengu.png"'/>
       </section>
       <div id="api-string-output">
         <code></code>
