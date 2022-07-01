@@ -5,9 +5,15 @@ var router = express.Router();
 
 const SETS = ["7", "6", "6.5"]
 
-function CreateErrorJson(status, errorType, errorMessage) {
+/**
+ * Creates error JSON to return back to the user 
+ * @param errorCode: the code/status of the error
+ * @param errorType: the type of error that occured
+ * @param errorMessage: the error message
+ **/
+function CreateErrorJson(errorCode, errorType, errorMessage) {
   return {
-    "status": status,
+    "status": errorCode,
     "type": errorType,
     "message": errorMessage,
   }
@@ -25,6 +31,7 @@ SETS.forEach((set) => {
   let traitData = fs.readFileSync(`./sets/set${set}/traits.json`);
   let traits = JSON.parse(traitData);
 
+  // Champions
   router.get(`/set${set}/champions`, function(req, res) {
     if (req.query.name) {
       for (let champion of champions) {
@@ -59,6 +66,7 @@ SETS.forEach((set) => {
     return res.json(retChamps);
   });
 
+  // Traits
   router.get(`/set${set}/traits`, function(req, res) {
     if (req.query.name) {
       for (let trait of traits) {
@@ -86,6 +94,7 @@ SETS.forEach((set) => {
     return res.json(retTraits)
   });
 
+  // Items
   router.get(`/set${set}/items`, function(req, res) {
     if (req.query.id) {
       for (let item of items) {
@@ -147,6 +156,7 @@ SETS.forEach((set) => {
     return res.json(retItems);
   });
 
+  // Images
   router.get(`/set${set}/imgs`, function(req, res) {
     if (req.query.champion) {
       for (let champion of champions) {

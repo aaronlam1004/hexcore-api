@@ -12,7 +12,6 @@ h1 {
 
 .navbar {
   position: fixed;
-  top: 0;
   width: 100%;
 }
 
@@ -35,10 +34,13 @@ h1 {
 .api-output {
   display: inline-block;
   vertical-align: top;
-  /* margin-left: 2em; */
   overflow-y: scroll;
   width: 35%;
   height: 25%;
+}
+
+section h1 {
+  position: relative;
 }
 
 #api-champions {
@@ -69,4 +71,11 @@ h1 {
   bottom: 0;
   right: 0;
   color: #000000;
+}
+
+/* Media specific changes */
+@media (max-width: 990px) {
+  main {
+    padding-top: 3.5em;
+  }
 }
