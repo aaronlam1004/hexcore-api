@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Exo");
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,12 +10,19 @@ main {
 }
 
 h1 {
-  color: red;
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  color: #6F6E68;
 }
 
 .navbar {
   position: fixed;
   width: 100%;
+}
+
+.navbar-brand {
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
 }
 
 .navbar a {
@@ -25,6 +35,11 @@ h1 {
 
 .form-group {
   display: inline-block;
+}
+
+.btn.btn-primary {
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 .card-body .chosen-container {

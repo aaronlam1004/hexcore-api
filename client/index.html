@@ -11,8 +11,9 @@
     <script src="../js/chosen/chosen.jquery.min.js"></script>
     <script src="../js/chosen/chosen.jquery.js"></script>
     <link href="../css/chosen/chosen.css" rel="stylesheet"/>
-
-    <link href="../css/styles.css" rel="stylesheet"/>
+    <!-- Stylesheet -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/all.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
@@ -34,8 +35,12 @@
         <h1>Champions</h1>
         <div class="form-group">
           <select id="api-champion-names"></select>
-          <button id="api-champion-all" class="btn btn-primary">All</button>
-          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-champion-collapse">Filter</button><br/>
+          <button id="api-champion-all" class="btn btn-primary">
+            <span class="fa fa-list"></span> All
+          </button>
+          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-champion-collapse">
+            <span class="fa fa-filter"></span> Filter
+          </button><br/>
           <div id="api-champion-collapse" class="collapse">
             <div class="card card-body">
               <select data-placeholder="Cost" multiple class="chosen-select" id="api-champion-cost"></select>
@@ -43,15 +48,19 @@
             </div>
           </div>
         </div>
-        <div class="api-output"><pre id="api-champion-output"></pre></div>
+        <pre class="api-output" id="api-champion-output"></pre>
       </section>
       <!-- Traits -->
       <section id="api-traits">
         <h1>Traits</h1>
         <div class="form-group">
           <select id="api-trait-names"></select>
-          <button id="api-trait-all" class="btn btn-primary">All</button>
-          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-trait-collapse">Filter</button><br/>
+          <button id="api-trait-all" class="btn btn-primary">
+            <span class="fa fa-list"></span> All
+          </button>
+          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-trait-collapse">
+            <span class="fa fa-filter"></span> Filter
+          </button><br/>
           <div id="api-trait-collapse" class="collapse">
             <div class="card card-body">
               <select data-placeholder="Type" multiple class="chosen-select" id="api-trait-types">
@@ -61,7 +70,7 @@
             </div>
           </div>
         </div>
-        <div class="api-output"><pre id="api-trait-output"></pre></div>
+        <pre class="api-output" id="api-trait-output"></pre>
       </section>
       <!-- Items -->
       <section id="api-items">
@@ -72,15 +81,19 @@
             <option>ID</option>
           </select>
           <select id="api-item-select"></select>
-          <button id="api-item-all" class="btn btn-primary">All</button>
-          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-item-collapse">Filter</button><br/>
+          <button id="api-item-all" class="btn btn-primary">
+            <span class="fa fa-list"></span> All
+          </button>
+          <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#api-item-collapse">
+            <span class="fa fa-filter"></span> Filter
+          </button><br/>
           <div id="api-item-collapse" class="collapse">
             <div class="card card-body">
               <select data-placeholder="Attributes" multiple class="chosen-select" id="api-item-attributes"></select>
             </div>
           </div>
         </div>
-        <div class="api-output"><pre id="api-item-output"></pre></div>
+        <pre class="api-output" id="api-item-output"></pre>
       </section>
       <!-- Images -->
       <section id="api-imgs">
